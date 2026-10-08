@@ -59,18 +59,25 @@ export async function GET(
       }
     }
 
-    // 2. If not local or file not found locally, fetch from external URL (e.g. Cloudinary)
-    if (!fileBuffer && report.fileUrl && report.fileUrl.startsWith('http')) {
-      const remoteRes = await fetch(report.fileUrl);
-      if (remoteRes.ok) {
-        const arrayBuf = await remoteRes.arrayBuffer();
-        fileBuffer = Buffer.from(arrayBuf);
+    // 2. Fetch from external URL (e.g. Cloudinary) or decode Data URI
+    if (!fileBuffer && report.fileUrl) {
+      if (report.fileUrl.startsWith('data:')) {
+        const parts = report.fileUrl.split(',');
+        if (parts.length > 1) {
+          fileBuffer = Buffer.from(parts[1], 'base64');
+        }
+      } else if (report.fileUrl.startsWith('http')) {
+        const remoteRes = await fetch(report.fileUrl);
+        if (remoteRes.ok) {
+          const arrayBuf = await remoteRes.arrayBuffer();
+          fileBuffer = Buffer.from(arrayBuf);
+        }
       }
     }
 
     if (!fileBuffer) {
-      // If still not found, redirect to fileUrl as last resort
-      if (report.fileUrl) {
+      // If still not buffered, redirect to fileUrl if remote
+      if (report.fileUrl && report.fileUrl.startsWith('http')) {
         return NextResponse.redirect(new URL(report.fileUrl, req.url));
       }
       return NextResponse.json({ error: 'Report file content not found.' }, { status: 404 });
