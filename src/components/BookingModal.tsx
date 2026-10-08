@@ -255,6 +255,7 @@ export default function BookingModal({ isOpen, onClose }: { isOpen: boolean, onC
 
             <button 
               type="submit" 
+              suppressHydrationWarning
               disabled={loading} 
               className="w-full bg-[#1D64D8] hover:bg-[#1554B8] text-white font-medium py-3.5 rounded-full flex items-center justify-center transition-all disabled:opacity-70 mt-6 shadow-sm cursor-pointer text-sm"
             >

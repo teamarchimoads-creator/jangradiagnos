@@ -311,6 +311,8 @@ export default function DownloadReportPage() {
                         {/* Action Buttons */}
                         <div className="flex items-center gap-2 pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-100">
                           <button
+                            type="button"
+                            suppressHydrationWarning
                             onClick={() => setViewingReport(report)}
                             className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 bg-[#EBF5FE] hover:bg-blue-100 text-[#1D64D8] font-bold text-xs py-2.5 px-4 rounded-xl transition-colors cursor-pointer"
                           >
@@ -318,6 +320,8 @@ export default function DownloadReportPage() {
                           </button>
 
                           <button
+                            type="button"
+                            suppressHydrationWarning
                             onClick={() => handleDownload(report)}
                             className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 bg-[#1D64D8] hover:bg-[#1554B8] text-white font-bold text-xs py-2.5 px-4 rounded-xl transition-colors shadow-sm cursor-pointer"
                           >
@@ -362,12 +366,16 @@ export default function DownloadReportPage() {
 
                 <div className="flex items-center gap-2">
                   <button
+                    type="button"
+                    suppressHydrationWarning
                     onClick={() => handleDownload(viewingReport)}
                     className="hidden sm:inline-flex items-center gap-1.5 bg-[#1D64D8] hover:bg-[#1554B8] text-white text-xs font-semibold px-3.5 py-2 rounded-xl transition-colors cursor-pointer"
                   >
                     <Download className="w-3.5 h-3.5" /> Download Report
                   </button>
                   <button
+                    type="button"
+                    suppressHydrationWarning
                     onClick={() => setViewingReport(null)}
                     className="text-slate-400 hover:text-slate-700 p-2 rounded-xl hover:bg-slate-200/60 transition-colors cursor-pointer"
                   >
@@ -410,12 +418,16 @@ export default function DownloadReportPage() {
 
                 <div className="flex items-center gap-2 w-full sm:w-auto">
                   <button
+                    type="button"
+                    suppressHydrationWarning
                     onClick={() => handleDownload(viewingReport)}
                     className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 bg-[#1D64D8] hover:bg-[#1554B8] text-white font-bold text-xs py-2.5 px-5 rounded-xl transition-colors shadow-sm cursor-pointer"
                   >
                     <Download className="w-3.5 h-3.5" /> Download Report
                   </button>
                   <button
+                    type="button"
+                    suppressHydrationWarning
                     onClick={() => setViewingReport(null)}
                     className="flex-1 sm:flex-initial bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-xs py-2.5 px-5 rounded-xl transition-colors cursor-pointer"
                   >

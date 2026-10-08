@@ -113,6 +113,8 @@ export default function AboutFaqAndInfo() {
                 className="bg-white rounded-[24px] border border-slate-100 shadow-[0_4px_20px_rgba(29,100,216,0.03)] overflow-hidden transition-all"
               >
                 <button
+                  type="button"
+                  suppressHydrationWarning
                   onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
                   className="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none cursor-pointer"
                 >
