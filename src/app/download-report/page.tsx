@@ -177,12 +177,14 @@ export default function DownloadReportPage() {
                   className="block w-full pl-16 pr-4 py-3 sm:py-3.5 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-[#1D64D8]/10 focus:border-[#1D64D8] transition-all text-slate-900 bg-[#F8FAFC] focus:bg-white outline-none text-sm font-medium tracking-wide"
                   placeholder="Enter 10-digit mobile number"
                   autoComplete="tel"
+                  suppressHydrationWarning
                   required
                 />
               </div>
 
               <button
                 type="submit"
+                suppressHydrationWarning
                 disabled={loading}
                 className="bg-[#1D64D8] hover:bg-[#1554B8] text-white font-bold py-3 sm:py-3.5 px-7 rounded-2xl transition-all shadow-md shadow-blue-500/10 flex justify-center items-center text-xs sm:text-sm disabled:opacity-70 disabled:cursor-not-allowed cursor-pointer shrink-0"
               >

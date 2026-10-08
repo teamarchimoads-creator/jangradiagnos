@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import ContactTicker from "@/components/ContactTicker";
 import Preloader from "@/components/Preloader";
 import Logo from "@/components/Logo";
+import FloatingActions from "@/components/FloatingActions";
 
 const inter = Inter({ 
   subsets: ["latin"], 
@@ -58,11 +59,11 @@ export default function RootLayout({
       <body className={`${plusJakartaSans.className} min-h-screen flex flex-col bg-white text-slate-900 antialiased`} suppressHydrationWarning>
         <Preloader />
 
-        {/* Top Announcement Bar - Ditto match to reference screenshot */}
-        <div className="bg-[#EEF6FD] text-slate-600 py-2.5 text-xs border-b border-sky-100/90">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-2">
-            {/* Phone numbers & Email */}
-            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 sm:gap-4 text-xs font-medium text-slate-700">
+        {/* Top Announcement Bar - Clean Single-line Mobile & Full Desktop */}
+        <div className="bg-[#EEF6FD] text-slate-600 border-b border-sky-100/90 text-xs">
+          {/* Desktop Full View */}
+          <div className="hidden sm:flex max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 justify-between items-center gap-2">
+            <div className="flex items-center gap-3 sm:gap-4 text-xs font-medium text-slate-700">
               <a href="tel:+919813503419" className="hover:text-blue-600 transition-colors">
                 +91 9813503419
               </a>
@@ -76,12 +77,22 @@ export default function RootLayout({
               </a>
             </div>
 
-            {/* Free Home Sample Collection link */}
             <div className="flex items-center gap-2">
-              <a href="tel:+919813503420" className="text-xs font-medium text-[#1D64D8] hover:underline">
+              <a href="tel:+919813503420" className="text-xs font-semibold text-[#1D64D8] hover:underline">
                 Free home sample collection
               </a>
             </div>
+          </div>
+
+          {/* Mobile Clean Single-line View */}
+          <div className="flex sm:hidden items-center justify-between px-3.5 py-1.5 text-[11px] font-medium">
+            <a href="tel:+919813503419" className="flex items-center gap-1 text-[#0A1938] font-bold hover:text-[#1D64D8]">
+              <span className="text-blue-600">📞</span> +91 9813503419
+            </a>
+            <a href="tel:+919813503420" className="text-[#1D64D8] font-bold flex items-center gap-0.5">
+              <span>Home Sample Collection</span>
+              <span className="text-[10px]">→</span>
+            </a>
           </div>
         </div>
 
@@ -103,15 +114,15 @@ export default function RootLayout({
               
               {/* Column 1: Branding & Logo matching Navbar */}
               <div className="space-y-3.5">
-                <Link href="/" className="inline-flex items-center gap-2.5 sm:gap-3 group">
+                <Link href="/" className="inline-flex items-center gap-1.5 sm:gap-2 group">
                   <img
-                    src="/logo.png"
+                    src="/logoForNav.png"
                     alt="Jangra Diagnostics"
                     className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105"
                   />
                   <div className="flex flex-col justify-center">
                     <span className="font-extrabold text-lg sm:text-xl tracking-tight transition-colors leading-none">
-                      <span className="text-[#0A1938]">Jangra </span>
+                      <span className="text-[#1A0E69]">Jangra </span>
                       <span className="text-[#1D64D8]">Diagnostics</span>
                     </span>
                     <span className="text-[10px] sm:text-[11px] font-bold text-slate-500 tracking-[0.14em] uppercase mt-1">
@@ -181,6 +192,9 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+
+        {/* Global Floating Quick-Actions: Direct Call & WhatsApp */}
+        <FloatingActions />
       </body>
     </html>
   );

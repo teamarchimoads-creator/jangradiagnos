@@ -69,6 +69,8 @@ export default function BookingModal({ isOpen, onClose }: { isOpen: boolean, onC
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm overflow-y-auto">
       <div className="bg-white rounded-[32px] shadow-2xl w-full max-w-lg my-8 relative animate-in fade-in zoom-in duration-300 border border-slate-100 overflow-hidden">
         <button 
+          type="button"
+          suppressHydrationWarning
           onClick={onClose} 
           className="absolute top-5 right-5 text-slate-400 hover:text-slate-700 transition-colors z-10 p-1.5 rounded-full hover:bg-slate-100"
           aria-label="Close modal"

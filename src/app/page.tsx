@@ -104,14 +104,14 @@ export default function HomePage() {
       {/* ========================================================
           1. HERO SECTION (Ditto Match to User Reference Screenshot)
          ======================================================== */}
-      <section className="relative w-full bg-white text-slate-900 overflow-hidden py-8 sm:py-10 lg:py-14 border-b border-slate-100">
+      <section className="relative w-full bg-white text-slate-900 overflow-hidden py-5 sm:py-8 lg:py-14 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+          <div className="grid lg:grid-cols-12 gap-6 lg:gap-10 items-center">
             
             {/* Left Column: Heading & CTAs */}
-            <div className="lg:col-span-6 space-y-4 sm:space-y-5">
+            <div className="lg:col-span-6 space-y-2.5 sm:space-y-4 lg:space-y-5">
               {/* Eyebrow - Matching reference styling exactly */}
-              <div className="text-xs sm:text-sm font-bold tracking-[0.2em] text-[#1D64D8] uppercase flex items-center gap-2">
+              <div className="text-[11px] sm:text-xs md:text-sm font-bold tracking-[0.16em] sm:tracking-[0.2em] text-[#1D64D8] uppercase flex items-center gap-1.5 sm:gap-2">
                 <span>ACCURATE</span>
                 <span className="text-slate-300 font-normal">/</span>
                 <span>ADVANCED</span>
@@ -119,45 +119,47 @@ export default function HomePage() {
                 <span>TRUSTED</span>
               </div>
 
-              {/* Main Headline - Bold Sans Two-Tone Headline matching reference */}
-              <h1 className="text-4xl sm:text-5xl lg:text-[60px] xl:text-[66px] font-extrabold tracking-tight leading-[1.08]">
+              {/* Main Headline - Bold Sans Two-Tone Headline */}
+              <h1 className="text-[28px] xs:text-3xl sm:text-4xl md:text-5xl lg:text-[58px] xl:text-[64px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.08]">
                 <span className="text-[#0A1938] block">Advanced Diagnostics</span>
                 <span className="text-[#1D64D8] block">for a Healthier Tomorrow</span>
               </h1>
 
               {/* Description */}
-              <p className="text-sm sm:text-base text-slate-500 max-w-lg leading-relaxed font-normal">
+              <p className="text-xs sm:text-sm md:text-base text-slate-500 max-w-lg leading-relaxed font-normal">
                 State-of-the-art technology, expert radiologists and compassionate care, all under one roof.
               </p>
 
               {/* Buttons Row with Download Report Button & Animated Pointing Finger */}
-              <div className="flex flex-wrap items-center gap-3.5 pt-3">
+              <div className="flex flex-wrap items-center gap-2.5 sm:gap-3.5 pt-1.5 sm:pt-3">
                 {/* Primary CTA: Royal Blue Pill Button */}
                 <button
+                  type="button"
+                  suppressHydrationWarning
                   onClick={() => setIsBookingOpen(true)}
-                  className="bg-[#1D64D8] hover:bg-[#1554B8] text-white font-medium text-sm sm:text-base px-6 sm:px-7 py-3 rounded-full transition-all shadow-md hover:shadow-lg flex items-center gap-2 cursor-pointer transform hover:-translate-y-0.5"
+                  className="bg-[#1D64D8] hover:bg-[#1554B8] text-white font-semibold text-xs sm:text-base px-5 sm:px-7 py-2.5 sm:py-3 rounded-full transition-all shadow-md hover:shadow-lg flex items-center gap-2 cursor-pointer transform hover:-translate-y-0.5"
                 >
-                  <Calendar className="w-4 h-4 text-white" />
+                  <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
                   <span>Book an Appointment</span>
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 </button>
 
                 {/* Download Report Button with Pointing Finger Animation */}
-                <div className="relative inline-flex items-center">
+                <div className="relative inline-flex items-center mt-3 sm:mt-0">
                   {/* Floating pointer callout badge */}
-                  <div className="absolute -top-6 sm:-top-7 left-3 flex items-center gap-1 bg-[#EBF5FE] text-[#1D64D8] border border-sky-200 px-2.5 py-0.5 rounded-full text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider shadow-xs animate-point-finger-y pointer-events-none z-10 whitespace-nowrap">
+                  <div className="absolute -top-5 sm:-top-6 left-3 flex items-center gap-1 bg-[#EBF5FE] text-[#1D64D8] border border-sky-200 px-2 py-0.5 rounded-full text-[9px] sm:text-[10px] font-extrabold uppercase tracking-wider shadow-2xs animate-point-finger-y pointer-events-none z-10 whitespace-nowrap">
                     <span>👇</span>
                     <span>Check Reports Online</span>
                   </div>
 
                   <Link
                     href="/download-report"
-                    className="relative inline-flex items-center gap-2 bg-[#0A1938] hover:bg-[#1D64D8] text-white font-bold text-sm sm:text-base px-6 sm:px-7 py-3 rounded-full transition-all shadow-md hover:shadow-xl transform hover:-translate-y-0.5 group border border-slate-800 hover:border-[#1D64D8]"
+                    className="relative inline-flex items-center gap-1.5 sm:gap-2 bg-[#0A1938] hover:bg-[#1D64D8] text-white font-bold text-xs sm:text-base px-5 sm:px-7 py-2.5 sm:py-3 rounded-full transition-all shadow-md hover:shadow-xl transform hover:-translate-y-0.5 group border border-slate-800 hover:border-[#1D64D8]"
                   >
-                    <span className="text-base sm:text-lg animate-point-finger-x select-none inline-block">
+                    <span className="text-sm sm:text-lg animate-point-finger-x select-none inline-block">
                       👉
                     </span>
-                    <FileText className="w-4 h-4 text-sky-400 group-hover:text-white transition-colors" />
+                    <FileText className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-sky-400 group-hover:text-white transition-colors" />
                     <span>Download Report</span>
                   </Link>
                 </div>
@@ -165,17 +167,17 @@ export default function HomePage() {
                 {/* Secondary CTA: Our Services with play button icon */}
                 <Link
                   href="/services"
-                  className="inline-flex items-center gap-2.5 text-sm font-medium text-slate-700 hover:text-[#1D64D8] px-3.5 py-2.5 rounded-full hover:bg-slate-50 transition-colors group"
+                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700 hover:text-[#1D64D8] px-2.5 sm:px-3.5 py-1.5 sm:py-2.5 rounded-full hover:bg-slate-50 transition-colors group"
                 >
-                  <span className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 group-hover:bg-[#1D64D8] group-hover:text-white transition-all">
-                    <Play className="w-3.5 h-3.5 fill-current ml-0.5" />
+                  <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 group-hover:bg-[#1D64D8] group-hover:text-white transition-all">
+                    <Play className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-current ml-0.5" />
                   </span>
                   <span>Our Services</span>
                 </Link>
               </div>
 
               {/* Motto / Accreditation strip */}
-              <div className="pt-1 flex items-center gap-2.5 text-xs text-slate-400">
+              <div className="pt-0.5 sm:pt-1 flex items-center gap-2 text-[11px] sm:text-xs text-slate-400">
                 <span className="italic text-slate-600">“Think of quality, Think of us.”</span>
                 <span>•</span>
                 <span className="text-slate-500">Serving Rohtak Since 2013</span>
@@ -699,6 +701,8 @@ export default function HomePage() {
 
                 <div className="pt-2">
                   <button
+                    type="button"
+                    suppressHydrationWarning
                     onClick={() => setIsBookingOpen(true)}
                     className="bg-white hover:bg-slate-50 text-[#0A1938] font-semibold text-xs sm:text-sm px-6 py-3 rounded-full transition-all shadow-md inline-flex items-center gap-2 cursor-pointer transform hover:-translate-y-0.5"
                   >
@@ -769,6 +773,7 @@ export default function HomePage() {
                     <input
                       type="text"
                       required
+                      suppressHydrationWarning
                       placeholder="e.g. Ramesh Kumar"
                       value={apptData.name}
                       onChange={(e) => setApptData({ ...apptData, name: e.target.value })}
@@ -781,6 +786,7 @@ export default function HomePage() {
                     <input
                       type="tel"
                       required
+                      suppressHydrationWarning
                       placeholder="e.g. 9813503419"
                       value={apptData.phone}
                       onChange={(e) => setApptData({ ...apptData, phone: e.target.value })}
@@ -793,6 +799,7 @@ export default function HomePage() {
                   <div>
                     <label className="block text-xs font-semibold text-slate-700 mb-1">Select Service *</label>
                     <select
+                      suppressHydrationWarning
                       value={apptData.service}
                       onChange={(e) => setApptData({ ...apptData, service: e.target.value })}
                       className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#1D64D8] focus:ring-1 focus:ring-[#1D64D8] bg-white"
@@ -810,6 +817,7 @@ export default function HomePage() {
                     <label className="block text-xs font-semibold text-slate-700 mb-1">Preferred Date</label>
                     <input
                       type="date"
+                      suppressHydrationWarning
                       value={apptData.preferredDate}
                       onChange={(e) => setApptData({ ...apptData, preferredDate: e.target.value })}
                       className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#1D64D8] focus:ring-1 focus:ring-[#1D64D8]"
@@ -821,6 +829,7 @@ export default function HomePage() {
                   <label className="block text-xs font-semibold text-slate-700 mb-1">Any Specific Requirement / Message</label>
                   <textarea
                     rows={2}
+                    suppressHydrationWarning
                     placeholder="Doctor referral notes, preferred time slot..."
                     value={apptData.message}
                     onChange={(e) => setApptData({ ...apptData, message: e.target.value })}
@@ -831,6 +840,7 @@ export default function HomePage() {
                 <div className="pt-2">
                   <button
                     type="submit"
+                    suppressHydrationWarning
                     disabled={isSubmittingAppt}
                     className="w-full bg-[#1D64D8] hover:bg-[#1554B8] text-white font-medium text-sm py-3.5 rounded-full transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer transform hover:-translate-y-0.5 disabled:opacity-50"
                   >

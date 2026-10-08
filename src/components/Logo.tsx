@@ -21,7 +21,7 @@ export default function Logo({ className = "", variant = "dark", showTagline = f
       />
       <div className="flex flex-col justify-center">
         <span className={`font-extrabold text-lg sm:text-xl tracking-tight leading-tight ${isLight ? "text-white" : ""}`}>
-          <span className={isLight ? "text-white" : "text-[#0A1938]"}>Jangra </span>
+          <span className={isLight ? "text-white" : "text-[#1A0E69]"}>Jangra </span>
           <span className={isLight ? "text-sky-300" : "text-[#1D64D8]"}>Diagnostics</span>
         </span>
         <span className={`text-[10px] sm:text-[11px] font-bold tracking-[0.14em] uppercase ${isLight ? "text-slate-300" : "text-slate-500"}`}>

@@ -49,19 +49,14 @@ export default function ContactTicker() {
 
   return (
     <div className="relative w-full bg-[#F4F9FD] text-slate-800 overflow-hidden border-y border-sky-100/90 py-2 sm:py-2.5 z-20 group shadow-xs">
-      {/* Left Static Badge on Desktop for immediate visual context */}
-      <div className="absolute left-0 top-0 bottom-0 z-30 bg-[#F4F9FD] sm:bg-gradient-to-r sm:from-[#F4F9FD] sm:via-[#F4F9FD] sm:to-transparent px-3 sm:px-6 flex items-center pointer-events-none">
-        <span className="hidden md:inline-flex items-center gap-1.5 bg-[#1D64D8] text-white text-[11px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full shadow-xs">
-          <span className="w-2 h-2 rounded-full bg-emerald-300 animate-ping inline-block" />
-          Direct Connect
-        </span>
-      </div>
+      {/* Left Gradient Fade */}
+      <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-16 z-30 bg-gradient-to-r from-[#F4F9FD] to-transparent pointer-events-none" />
 
       {/* Right Gradient Fade */}
       <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-16 z-30 bg-gradient-to-l from-[#F4F9FD] to-transparent pointer-events-none" />
 
-      {/* Marquee Track */}
-      <div className="flex animate-marquee group-hover:[animation-play-state:paused] whitespace-nowrap pl-4 sm:pl-36">
+      {/* Marquee Track (Left to Right continuous movement) */}
+      <div className="flex animate-marquee group-hover:[animation-play-state:paused] whitespace-nowrap">
         {[...Array(2)].map((_, loopIdx) => (
           <div key={loopIdx} className="flex items-center space-x-6 sm:space-x-10 pr-6 sm:pr-10 shrink-0">
             {tickerItems.map((item, idx) => {
