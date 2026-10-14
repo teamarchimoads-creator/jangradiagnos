@@ -70,12 +70,34 @@ export default function PathologyPage() {
         <div className="grid lg:grid-cols-12 gap-8">
           
           <div className="lg:col-span-8 space-y-8">
+            {/* Max Care Packages Promotional Banner */}
+            <div className="bg-gradient-to-r from-[#0F2856] via-[#1D64D8] to-[#0A1938] text-white rounded-3xl p-6 sm:p-7 shadow-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 border border-sky-400/20">
+              <div className="space-y-1.5">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-sky-200 text-xs font-bold uppercase tracking-wider">
+                  <Sparkles className="w-3.5 h-3.5 text-yellow-300" />
+                  <span>Free SMART Report by MAX Hospitals</span>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-extrabold text-white">
+                  Max Care Health Check Packages (1 to 5)
+                </h3>
+                <p className="text-xs sm:text-sm text-sky-100 max-w-xl">
+                  Save up to 65% with Family Buy 1 Get 1 offers, Full-Body Health Plus with 100% cashback, and ₹99 weekend test specials.
+                </p>
+              </div>
+              <Link
+                href="/prices"
+                className="bg-white hover:bg-sky-50 text-[#0A1938] font-bold text-xs sm:text-sm px-6 py-3 rounded-full shrink-0 shadow transition-all hover:scale-105"
+              >
+                View Packages &amp; Offers →
+              </Link>
+            </div>
+
             {/* Overview Banner */}
             <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_4px_24px_rgba(10,25,56,0.04)]">
               <div className="aspect-16/9 rounded-2xl overflow-hidden mb-6 bg-slate-100 relative">
                 <img
-                  src="/gallery/blood_tests.jpg"
-                  alt="Pathology Lab Testing at Jangra Diagnostics"
+                  src="/enhanced/lab.png"
+                  alt="Clinical Laboratory & MAX LAB Partner Suite at Jangra Diagnostics Rohtak"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute top-4 left-4 bg-[#0A1938]/85 text-white text-xs font-medium px-3.5 py-1.5 rounded-full backdrop-blur-sm">

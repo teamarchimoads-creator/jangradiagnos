@@ -1,6 +1,4 @@
 export const testPrices = [
-  { name: "CBP", price: 300 },
-  { name: "CUE", price: 100 },
   { name: "ESR", price: 100 },
   { name: "RBS", price: 50 },
   { name: "FBS", price: 50 },

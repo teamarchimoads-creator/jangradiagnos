@@ -49,13 +49,13 @@ export default function Preloader() {
         <div className="absolute w-[240px] h-[240px] sm:w-[310px] sm:h-[310px] rounded-full border border-transparent border-b-[#00A6A6]/30 animate-[spin_4s_linear_infinite_reverse]"></div>
 
         {/* Pure Transparent Logo Emblem with 3D rotation and reveal */}
-        <div className="relative animate-logo-reveal z-10 flex items-center justify-center">
+        <div className="relative animate-logo-reveal z-10 flex items-center justify-center p-3">
           <Image
-            src="/logoForNav.png"
+            src="/gallery/logo.png"
             alt="Jangra Diagnostics Loading..."
-            width={140}
-            height={110}
-            className="w-28 sm:w-36 h-auto object-contain drop-shadow-[0_10px_25px_rgba(29,100,216,0.25)]"
+            width={240}
+            height={160}
+            className="w-40 sm:w-52 h-auto object-contain drop-shadow-[0_10px_25px_rgba(29,100,216,0.25)]"
             priority
           />
         </div>

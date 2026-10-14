@@ -1,0 +1,140 @@
+[
+  [
+    {
+      "fileName": "WhatsApp Image 2026-10-14 at 1.03.02 PM (1).jpeg",
+      "relPath": "/newPictures/WhatsApp Image 2026-10-14 at 1.03.02 PM (1).jpeg",
+      "fullPath": "E:\\archimo ads work\\jangra diagnostics\\jangra-diagnostics\\public\\newPictures\\WhatsApp Image 2026-10-14 at 1.03.02 PM (1).jpeg",
+      "sizeBytes": 288421,
+      "width": 1600,
+      "height": 1068,
+      "aspectRatio": "1.50",
+      "format": "jpeg",
+      "sha256": "30a5e325dc1c40b42de497d86eb7461c0ee718633c22172357407e25168f3227",
+      "folder": "newPictures",
+      "dhash": "1001100000011100010010000010010000111011001100010011100101111001"
+    },
+    {
+      "fileName": "WhatsApp Image 2026-10-14 at 1.03.02 PM.jpeg",
+      "relPath": "/newPictures/WhatsApp Image 2026-10-14 at 1.03.02 PM.jpeg",
+      "fullPath": "E:\\archimo ads work\\jangra diagnostics\\jangra-diagnostics\\public\\newPictures\\WhatsApp Image 2026-10-14 at 1.03.02 PM.jpeg",
+      "sizeBytes": 281895,
+      "width": 1600,
+      "height": 1068,
+      "aspectRatio": "1.50",
+      "format": "jpeg",
+      "sha256": "f25a9cf8770a96804c9b50f916bc917c7c3726c0e44b7399e1a55248c4c9113e",
+      "folder": "newPictures",
+      "dhash": "1001100100011100010110000110110000111011001100110011100101111001"
+    }
+  ],
+  [
+    {
+      "fileName": "WhatsApp Image 2026-10-14 at 1.37.11 PM (2).jpeg",
+      "relPath": "/newPictures/WhatsApp Image 2026-10-14 at 1.37.11 PM (2).jpeg",
+      "fullPath": "E:\\archimo ads work\\jangra diagnostics\\jangra-diagnostics\\public\\newPictures\\WhatsApp Image 2026-10-14 at 1.37.11 PM (2).jpeg",
+      "sizeBytes": 331950,
+      "width": 1600,
+      "height": 1064,
+      "aspectRatio": "1.50",
+      "format": "jpeg",
+      "sha256": "1acc693f0ee4d79f6bb915f55aae826a40be7ad22ad231540ba0b0979f373717",
+      "folder": "newPictures",
+      "dhash": "0010001100100111001101110001001100111111000110110001001111011111"
+    },
+    {
+      "fileName": "WhatsApp Image 2026-10-14 at 1.37.12 PM.jpeg",
+      "relPath": "/newPictures/WhatsApp Image 2026-10-14 at 1.37.12 PM.jpeg",
+      "fullPath": "E:\\archimo ads work\\jangra diagnostics\\jangra-diagnostics\\public\\newPictures\\WhatsApp Image 2026-10-14 at 1.37.12 PM.jpeg",
+      "sizeBytes": 331098,
+      "width": 1600,
+      "height": 1064,
+      "aspectRatio": "1.50",
+      "format": "jpeg",
+      "sha256": "b876f2a446197a3b77dd0cc68e31d6f795279be736bb0cf0ede749a1c67b59a2",
+      "folder": "newPictures",
+      "dhash": "0010001100100111001101110011001100111111000110110101001111001101"
+    }
+  ],
+  [
+    {
+      "fileName": "logo.png",
+      "relPath": "/gallery/logo.png",
+      "fullPath": "E:\\archimo ads work\\jangra diagnostics\\jangra-diagnostics\\public\\gallery\\logo.png",
+      "sizeBytes": 1254545,
+      "width": 1421,
+      "height": 1107,
+      "aspectRatio": "1.28",
+      "format": "png",
+      "sha256": "61c645c16df543e8aa2356f6b4fe8963ab343501a7e24fc83dd9d0dbd1262dc4",
+      "folder": "gallery",
+      "dhash": "0000100000110000000011010000110111100010110111011001011011000000"
+    },
+    {
+      "fileName": "logo.png",
+      "relPath": "/logo.png",
+      "fullPath": "E:\\archimo ads work\\jangra diagnostics\\jangra-diagnostics\\public\\logo.png",
+      "sizeBytes": 1254545,
+      "width": 1421,
+      "height": 1107,
+      "aspectRatio": "1.28",
+      "format": "png",
+      "sha256": "61c645c16df543e8aa2356f6b4fe8963ab343501a7e24fc83dd9d0dbd1262dc4",
+      "folder": "root",
+      "dhash": "0000100000110000000011010000110111100010110111011001011011000000"
+    },
+    {
+      "fileName": "logoForNav.png",
+      "relPath": "/logoForNav.png",
+      "fullPath": "E:\\archimo ads work\\jangra diagnostics\\jangra-diagnostics\\public\\logoForNav.png",
+      "sizeBytes": 1254545,
+      "width": 1421,
+      "height": 1107,
+      "aspectRatio": "1.28",
+      "format": "png",
+      "sha256": "61c645c16df543e8aa2356f6b4fe8963ab343501a7e24fc83dd9d0dbd1262dc4",
+      "folder": "root",
+      "dhash": "0000100000110000000011010000110111100010110111011001011011000000"
+    },
+    {
+      "fileName": "logoNew.png",
+      "relPath": "/logoNew.png",
+      "fullPath": "E:\\archimo ads work\\jangra diagnostics\\jangra-diagnostics\\public\\logoNew.png",
+      "sizeBytes": 1254545,
+      "width": 1421,
+      "height": 1107,
+      "aspectRatio": "1.28",
+      "format": "png",
+      "sha256": "61c645c16df543e8aa2356f6b4fe8963ab343501a7e24fc83dd9d0dbd1262dc4",
+      "folder": "root",
+      "dhash": "0000100000110000000011010000110111100010110111011001011011000000"
+    }
+  ],
+  [
+    {
+      "fileName": "wellness.jpg",
+      "relPath": "/services/wellness.jpg",
+      "fullPath": "E:\\archimo ads work\\jangra diagnostics\\jangra-diagnostics\\public\\services\\wellness.jpg",
+      "sizeBytes": 898865,
+      "width": 1200,
+      "height": 896,
+      "aspectRatio": "1.34",
+      "format": "jpeg",
+      "sha256": "b4e6379db1f060544efd58fc73813ca9279f08cd177dfd8bf6acb83db46c53e3",
+      "folder": "services",
+      "dhash": "0111011100110110001101100011001000100110001111100011111100101111"
+    },
+    {
+      "fileName": "wellness_clinic.jpg",
+      "relPath": "/wellness_clinic.jpg",
+      "fullPath": "E:\\archimo ads work\\jangra diagnostics\\jangra-diagnostics\\public\\wellness_clinic.jpg",
+      "sizeBytes": 898865,
+      "width": 1200,
+      "height": 896,
+      "aspectRatio": "1.34",
+      "format": "jpeg",
+      "sha256": "b4e6379db1f060544efd58fc73813ca9279f08cd177dfd8bf6acb83db46c53e3",
+      "folder": "root",
+      "dhash": "0111011100110110001101100011001000100110001111100011111100101111"
+    }
+  ]
+]

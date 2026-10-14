@@ -7,29 +7,29 @@ import { motion } from 'framer-motion';
 
 const servicesData: Record<string, any> = {
   "ultrasound": {
-    name: "Ultrasound Services",
-    description: "High-resolution real-time diagnostic sonography conducted by consultant radiologists. From routine abdominal examinations to Level-1, Level-2 Anomaly scans, 3D/4D obstetrical rendering, and Color Doppler hemodynamic evaluations.",
+    name: "Ultrasound (Sonography) Services",
+    description: "High-resolution real-time diagnostic and obstetrical sonography conducted by Dr. Krishan Jangra (MBBS, DMRD, DNB). Zero radiation, safe for pregnancy, covering full pregnancy scan timelines, 3D/4D Color Doppler, and diagnostic organ investigations.",
     img: "/services/ultrasound.jpg",
     details: [
-      "Level-1 & Level-2 Targeted Anomaly scans",
-      "3D/4D Ultrasound & Comprehensive Pregnancy Monitoring",
-      "Color Doppler for vascular and fetal-maternal assessment",
-      "Non-invasive, safe imaging with high clinical precision"
+      "Pregnancy timeline: Viability (6-8w), NT/NB scan (11-13w), Level-II Anomaly (18-24w) & Color Doppler (28-34w)",
+      "Diagnostic ultrasounds for abdomen, liver, gallstones, kidney stones, thyroid, breast & scrotal conditions",
+      "Ultrasound guidance for needle placement, FNAC, biopsies, cyst/abscess drainage & IUD checks",
+      "Strictly performed and interpreted by Consultant Radiologists with zero radiation"
     ],
-    features: "Safe • Non-Invasive • Senior Radiologist Supervision",
+    features: "Safe • Zero Radiation • Consultant Radiologist Supervision",
     fullPage: "/services/ultrasound"
   },
   "digital-x-ray": {
-    name: "Digital X-Ray",
-    description: "Low-radiation digital radiography providing instant high-contrast radiographic visualization of chest, bones, joints, spine, and specialized contrast examinations such as HSG.",
+    name: "Digital X-Ray Services",
+    description: "Fast, high-contrast digital radiography utilizing safe, minimal radiation doses to evaluate broken bones, dislocations, chest infections, foreign objects, and special contrast investigations such as HSG.",
     img: "/services/xray.jpg",
     details: [
-      "Instant image availability and enhanced diagnostic detail",
-      "Significantly reduced radiation dose for patient protection",
-      "Comprehensive general and specialized skeletal studies",
-      "Hysterosalpingography (HSG) performed with sterile care"
+      "Fracture, hairline crack, arthritis, and joint dislocation evaluation",
+      "Chest X-rays (PA/AP), Abdominal, Spine (Cervical/Lumbar) & Dental RVG",
+      "Special contrast studies (Oral, IV, Rectal) and gentle Hysterosalpingography (HSG)",
+      "ALARA radiation safety protocols with instant digital image preview"
     ],
-    features: "Low Radiation • Instant Digital Processing • Precise",
+    features: "Low Radiation • Instant Digital Processing • Precise Radiologist Reports",
     fullPage: "/services/digital-x-ray"
   },
   "pathology": {
@@ -51,51 +51,38 @@ const servicesData: Record<string, any> = {
     img: "/services/ultrasound.jpg",
     details: [
       "Ultrasound-guided FNAC (Fine Needle Aspiration Cytology)",
-      "Core Biopsy for soft tissue and organ lesions",
-      "Percutaneous abscess drainage under local anesthesia",
-      "Diagnostic and therapeutic fluid aspiration"
+      "Core Biopsy for soft tissue and organ lesions (liver, kidney, prostate)",
+      "Percutaneous abscess and cyst drainage under local anesthesia",
+      "Therapeutic fluid aspiration, nerve blocks & lesion localization"
     ],
     features: "Minimally Invasive • Real-Time Ultrasound Guided • Sterile Protocols",
     fullPage: "/services/guided-procedures"
   },
   "dental": {
-    name: "Jangra Dental Care",
-    description: "Complete dental and oral health clinic headed by Dr. Neha Jangra (BDS, MMC Ambala, Ex-Intern Government Dental College, Rohtak). Offering gentle consultation, preventive care, and restorative dental solutions.",
+    name: "Jangra Dental Care & Clinic",
+    description: "Complete dental clinic headed by Dr. Neha Jangra (BDS, MMC Ambala, Ex-Intern GDC Rohtak) alongside in-house and on-call specialist doctors for specialized root canals, implants, and cosmetic dental treatments.",
     img: "/services/dental.jpg",
     details: [
-      "Comprehensive dental examination & consultation",
-      "Preventive scaling, plaque removal & cavity prevention",
-      "Restorative fillings, pain relief & extractions",
-      "Patient-first oral hygiene & lifestyle guidance"
+      "RCT (Root Canal Treatment) for pain relief and tooth preservation",
+      "Partial and Full Mouth Dental Implants with natural chewing restoration",
+      "Smile Designing, Cosmetic Procedures, Veneers, Laminates, Crowns & Bridges",
+      "Fillings, Sealants, Scaling, Teeth Whitening, Teeth Reshaping & RVG Digital Dental X-Rays"
     ],
-    features: "Dr. Neha Jangra (BDS) • Modern Dental Setup • Gentle Care",
+    features: "In-House & On-Call Specialists • Dr. Neha Jangra (BDS) • Modern Operatory",
     fullPage: "/services/dental"
   },
-  "ct-scan": {
-    name: "CT Scan (Computed Tomography)",
-    description: "Detailed cross-sectional multi-slice computed tomography scans providing high-contrast anatomical visualization for prompt clinical diagnostics and rapid emergency evaluation.",
-    img: "/services/ct-scan.jpg",
+  "wellness": {
+    name: "Wellness & Preventive Health Clinic",
+    description: "Proactive health assessments, routine screenings, lifestyle consultations, and chronic disease monitoring for long-term health and vitality.",
+    img: "/services/wellness.jpg",
     details: [
-      "High-speed multi-slice volumetric acquisition",
-      "Detailed brain, thorax, abdomen, and skeletal scanning",
-      "Low-dose clinical radiation protocols",
-      "Rapid specialist radiologist reporting"
+      "Comprehensive preventive full-body health screenings",
+      "Chronic disease monitoring (Diabetes, BP, Thyroid, Lipid)",
+      "Women's wellness and geriatric senior health checks",
+      "Personalized nutrition, lifestyle and stress management guidance"
     ],
-    features: "High-Speed • Multi-Slice • Detailed Cross-Sectional",
-    fullPage: "/services"
-  },
-  "mri": {
-    name: "MRI Scan (Magnetic Resonance)",
-    description: "Advanced non-invasive magnetic resonance imaging offering superior soft tissue contrast for precise neurological, spine, joint, and musculoskeletal diagnosis.",
-    img: "/services/mri.jpg",
-    details: [
-      "High-resolution neuro & brain imaging",
-      "Spine, joint and musculoskeletal evaluation",
-      "Non-ionizing radiation diagnostic scanning",
-      "Patient-friendly wide bore comfortable design"
-    ],
-    features: "Superior Soft-Tissue Contrast • Non-Ionizing • High Resolution",
-    fullPage: "/services"
+    features: "Preventive Care • Complete Health Screenings • Lifestyle Medicine",
+    fullPage: "/services/wellness"
   }
 };
 

@@ -36,9 +36,13 @@ export default function DoctorsPage() {
           {/* DOCTOR 1: DR. KRISHAN JANGRA */}
           <div className="bg-white rounded-[24px] sm:rounded-[28px] p-6 sm:p-7 border border-slate-100 shadow-[0_4px_20px_rgba(10,25,56,0.04)] hover:shadow-lg hover:border-sky-100 transition-all duration-300 flex flex-col justify-between">
             <div>
-              <div className="flex items-center gap-3.5 mb-4">
-                <div className="w-14 h-14 rounded-2xl bg-[#EBF5FE] flex items-center justify-center text-[#1D64D8] shrink-0">
-                  <User className="w-7 h-7" />
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden shrink-0 border-2 border-sky-100 shadow-md bg-slate-100">
+                  <img
+                    src="/newPictures/WhatsApp Image 2026-10-14 at 1.37.14 PM.jpeg"
+                    alt="Dr. Krishan Jangra — Consultant Radiologist"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <span className="bg-[#EBF5FE] text-[#1D64D8] text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full inline-block mb-1">
@@ -50,6 +54,18 @@ export default function DoctorsPage() {
                   <p className="text-[#1D64D8] text-xs font-semibold">
                     MBBS, DMRD, DNB
                   </p>
+                </div>
+              </div>
+
+              {/* Clinical in-action preview */}
+              <div className="rounded-2xl overflow-hidden mb-4 border border-slate-100 aspect-[16/9] relative group">
+                <img
+                  src="/enhanced/ultrasound.png"
+                  alt="Dr. Krishan Jangra performing an ultrasound examination"
+                  className="w-full h-full object-cover transition-transform group-hover:scale-102"
+                />
+                <div className="absolute bottom-2 left-2 bg-[#0A1938]/85 text-white text-[10px] font-medium px-2.5 py-1 rounded-full backdrop-blur-sm">
+                  Ultrasound Suite • Jangra Diagnostics
                 </div>
               </div>
 
@@ -108,9 +124,13 @@ export default function DoctorsPage() {
           {/* DOCTOR 2: DR. NEHA JANGRA */}
           <div className="bg-white rounded-[24px] sm:rounded-[28px] p-6 sm:p-7 border border-slate-100 shadow-[0_4px_20px_rgba(10,25,56,0.04)] hover:shadow-lg hover:border-emerald-100 transition-all duration-300 flex flex-col justify-between">
             <div>
-              <div className="flex items-center gap-3.5 mb-4">
-                <div className="w-14 h-14 rounded-2xl bg-emerald-50 flex items-center justify-center text-emerald-600 shrink-0">
-                  <Sparkles className="w-7 h-7" />
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden shrink-0 border-2 border-emerald-100 shadow-md bg-slate-100">
+                  <img
+                    src="/newPictures/WhatsApp Image 2026-10-14 at 1.37.04 PM.jpeg"
+                    alt="Dr. Neha Jangra — Lead Dental Surgeon"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <span className="bg-emerald-50 text-emerald-700 text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full inline-block mb-1">
@@ -122,6 +142,18 @@ export default function DoctorsPage() {
                   <p className="text-emerald-700 text-xs font-semibold">
                     BDS, MMC Ambala
                   </p>
+                </div>
+              </div>
+
+              {/* Clinical in-action preview */}
+              <div className="rounded-2xl overflow-hidden mb-4 border border-slate-100 aspect-[16/9] relative group">
+                <img
+                  src="/enhanced/dentalDoctor.png"
+                  alt="Dr. Neha Jangra performing dental procedure"
+                  className="w-full h-full object-cover transition-transform group-hover:scale-102"
+                />
+                <div className="absolute bottom-2 left-2 bg-[#0A1938]/85 text-white text-[10px] font-medium px-2.5 py-1 rounded-full backdrop-blur-sm">
+                  Dental Operatory • Jangra Dental Care
                 </div>
               </div>
 

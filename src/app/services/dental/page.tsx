@@ -1,53 +1,71 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, CheckCircle2, Calendar, Phone, Sparkles, User, ShieldCheck } from "lucide-react";
+import { 
+  ArrowLeft, CheckCircle2, Calendar, Phone, Sparkles, User, ShieldCheck, 
+  Smile, Activity, Stethoscope, Clock
+} from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Jangra Dental Care | Dr. Neha Jangra (BDS) | Rohtak",
-  description: "Complete dental care at Jangra Dental Care in Rohtak by Dr. Neha Jangra (BDS, MMC Ambala, Ex-Intern Govt Dental College Rohtak). Consultation, preventive care, general dental treatments, and oral guidance.",
+  title: "Jangra Dental Care & Clinic | Dr. Neha Jangra (BDS) | Rohtak",
+  description: "Comprehensive dental care in Rohtak at Jangra Dental Care: RCT, Partial & Full Mouth Implants, Smile Designing, Veneers, Crowns, Scaling, Teeth Whitening & RVG Digital Dental X-Rays by in-house and on-call specialist doctors.",
 };
 
 export default function DentalPage() {
-  const dentalSections = [
+  const dentalTreatments = [
     {
-      title: "Dental Consultation",
-      desc: "Comprehensive examination of teeth, gums, and oral cavity with personalized treatment planning and expert advice.",
-      points: [
-        "Thorough visual and diagnostic examination",
-        "Assessment of tooth sensitivity and decay",
-        "Gum health and periodontal condition check",
-        "Transparent treatment planning & consultation"
-      ]
+      name: "RCT (Root Canal Treatment)",
+      desc: "Painless single-sitting and multi-sitting root canal therapy to save infected or severely damaged teeth, eliminate persistent pain, and preserve natural tooth structure.",
+      badge: "Pain Relief & Preservation"
     },
     {
-      title: "Preventive Dental Care",
-      desc: "Proactive care designed to protect teeth and gums, preventing cavities, plaque accumulation, and gum disorders.",
-      points: [
-        "Professional scaling & teeth cleaning",
-        "Plaque and calculus removal",
-        "Enamel protection and preventive guidance",
-        "Routine check-ups for ongoing oral wellness"
-      ]
+      name: "Implants (Partial & Full Mouth)",
+      desc: "Permanent titanium dental implants replacing single missing teeth, multiple gaps, or full-arch edentulous cases with natural aesthetics and chewing function.",
+      badge: "Permanent Tooth Replacement"
     },
     {
-      title: "General Dental Care",
-      desc: "High-quality restorative and therapeutic treatments to preserve tooth structure and restore comfortable chewing.",
-      points: [
-        "Dental fillings and restoration of cavities",
-        "Management of tooth pain and infections",
-        "Safe extractions when clinically required",
-        "Crown and restorative consultation"
-      ]
+      name: "Smile Designing",
+      desc: "Custom aesthetic analysis and digital smile planning harmonizing tooth proportions, gum contour, and facial symmetry for an exceptional natural smile.",
+      badge: "Aesthetic Transformation"
     },
     {
-      title: "Oral Health Guidance",
-      desc: "Educational guidance on brushing techniques, flossing, diet, and habits for maintaining lifelong healthy smiles.",
-      points: [
-        "Personalized hygiene instructions",
-        "Dietary and lifestyle tips for teeth strength",
-        "Pediatric and adult dental care guidelines",
-        "Management of bad breath and sensitivity"
-      ]
+      name: "Cosmetic Procedures",
+      desc: "Advanced aesthetic dental treatments including tooth contouring, composite bonding, diastema (gap) closures, and aesthetic enamel recontouring.",
+      badge: "Cosmetic Dentistry"
+    },
+    {
+      name: "Veneers and Laminates",
+      desc: "Ultra-thin, custom-crafted porcelain or composite shells bonded to the front of teeth to fix deep stains, chipped enamel, and minor misalignments.",
+      badge: "Flawless Aesthetics"
+    },
+    {
+      name: "Crowns and Bridges",
+      desc: "High-strength metal-free zirconia and ceramic crowns and fixed bridge prostheses to restore broken, weakened, or missing teeth with long-lasting durability.",
+      badge: "Restorative Strength"
+    },
+    {
+      name: "Fillings and Sealants",
+      desc: "Tooth-colored composite resin fillings for cavity repair and preventive pit-and-fissure sealants to shield molars from decay in children and adults.",
+      badge: "Cavity Restoration & Protection"
+    },
+    {
+      name: "Scaling & Deep Cleaning",
+      desc: "Ultrasonic scaling to remove stubborn calculus, dental plaque, and bacterial tartar, curing bleeding gums and halting periodontal disease.",
+      badge: "Gum & Periodontal Health"
+    },
+    {
+      name: "Teeth Whitening",
+      desc: "Safe and effective in-office dental bleaching treatments to remove stubborn food, tea, coffee, and tobacco stains, brightening teeth several shades lighter.",
+      badge: "Bright Smile Enhancement"
+    },
+    {
+      name: "Teeth Reshaping",
+      desc: "Gentle odontoplasty and enamel recontouring to smooth irregular edges, minor overlaps, and uneven tooth lengths for a balanced, harmonious bite.",
+      badge: "Minor Alignment & Contouring"
+    },
+    {
+      name: "RVG (Digital Dental X-Rays)",
+      desc: "Real-time RadioVisioGraphy (RVG) sensors providing instant, high-magnification intraoral radiographs with minimal radiation dose for pinpoint diagnosis.",
+      badge: "Instant Low-Radiation Imaging"
     }
   ];
 
@@ -62,42 +80,48 @@ export default function DentalPage() {
           <div className="text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-[#1D64D8] mb-2 flex items-center gap-2">
             <span>DENTAL CARE</span>
             <span className="text-slate-300 font-normal">/</span>
-            <span>ORAL HEALTH</span>
+            <span>SPECIALIST ORAL HEALTH</span>
             <span className="text-slate-300 font-normal">/</span>
             <span>ROHTAK</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.14]">
             <span className="text-[#0A1938]">Jangra </span>
-            <span className="text-[#1D64D8]">Dental Care</span>
+            <span className="text-[#1D64D8]">Dental Care Clinic</span>
           </h1>
           <p className="text-slate-500 text-xs sm:text-sm font-normal max-w-2xl leading-relaxed mt-3">
-            Complete dental care with compassionate consultation and treatment by Dr. Neha Jangra (BDS, MMC Ambala).
+            All types of dental treatments available under one roof—conducted by experienced in-house surgeons and on-call specialist doctors for advanced treatments.
           </p>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-10">
-        <div className="grid lg:grid-cols-12 gap-6">
+        <div className="grid lg:grid-cols-12 gap-8">
           
-          <div className="lg:col-span-8 space-y-6">
-            {/* Dental Operatory Suite Banner */}
-            <div className="aspect-16/9 rounded-2xl overflow-hidden bg-slate-100 relative border border-slate-100 shadow-[0_4px_20px_rgba(10,25,56,0.04)]">
+          <div className="lg:col-span-8 space-y-8">
+            
+            {/* Dental Banner */}
+            <div className="aspect-16/9 rounded-3xl overflow-hidden bg-slate-100 relative border border-slate-100 shadow-[0_4px_24px_rgba(29,100,216,0.04)]">
               <img
-                src="/services/dental.jpg"
-                alt="Jangra Dental Care Operatory Suite"
+                src="/enhanced/dentalDoctor.png"
+                alt="Jangra Dental Care Operatory Suite in Rohtak"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute top-3 left-3 bg-[#0A1938]/85 text-white text-[11px] font-medium px-3 py-1 rounded-full backdrop-blur-sm">
-                Modern Dental Operatory Suite
+              <div className="absolute top-4 left-4 bg-[#0A1938]/85 text-white text-[11px] font-medium px-3.5 py-1.5 rounded-full backdrop-blur-sm flex items-center gap-2">
+                <Smile className="w-3.5 h-3.5 text-[#38BDF8]" />
+                <span>Modern Dental Operatory Suite</span>
               </div>
             </div>
 
-            {/* Doctor Profile Banner */}
-            <div className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-100 shadow-[0_4px_20px_rgba(10,25,56,0.04)] flex flex-col md:flex-row gap-5 items-center">
-              <div className="w-20 h-20 rounded-2xl bg-[#EBF5FE] flex items-center justify-center text-[#1D64D8] shrink-0">
-                <User className="w-10 h-10" />
+            {/* Doctor & Clinic Highlights */}
+            <div className="bg-white rounded-3xl p-6 sm:p-7 border border-slate-100 shadow-[0_4px_24px_rgba(29,100,216,0.04)] flex flex-col md:flex-row gap-6 items-center">
+              <div className="w-24 h-24 rounded-2xl overflow-hidden bg-slate-100 shrink-0 border border-slate-100 shadow-sm">
+                <img
+                  src="/newPictures/WhatsApp Image 2026-10-14 at 1.37.04 PM.jpeg"
+                  alt="Dr. Neha Jangra - Dental Surgeon at Jangra Dental Care"
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
-              <div className="space-y-1 text-center md:text-left flex-1">
+              <div className="space-y-1.5 text-center md:text-left flex-1">
                 <span className="text-[10px] bg-[#EBF5FE] text-[#1D64D8] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider inline-block">
                   Lead Dental Surgeon
                 </span>
@@ -105,74 +129,122 @@ export default function DentalPage() {
                   Dr. Neha Jangra
                 </h2>
                 <p className="text-[#1D64D8] font-semibold text-xs">
-                  BDS, MMC Ambala • Ex-Intern, Government Dental College, Rohtak
+                  BDS (MMC Ambala) • Ex-Intern, Government Dental College (GDC), Rohtak
                 </p>
-                <p className="text-slate-500 text-xs sm:text-sm font-normal leading-relaxed pt-0.5">
-                  Dedicated to providing gentle, hygienic, and patient-centred dental treatments in a friendly, comfortable atmosphere.
+                <p className="text-slate-500 text-xs sm:text-sm font-normal leading-relaxed pt-1">
+                  All types of dental treatment are available at Jangra Dental Care, delivered by in-house surgeons and dedicated on-call specialists (Endodontists, Implantologists, Orthodontists, and Prosthodontists) ensuring gentle, hygienic, and precise dental solutions.
                 </p>
               </div>
             </div>
 
-            {/* Sections Grid */}
-            <div className="grid sm:grid-cols-2 gap-5">
-              {dentalSections.map((sec, idx) => (
-                <div key={idx} className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-100 shadow-[0_4px_20px_rgba(10,25,56,0.04)] hover:shadow-lg hover:border-sky-100 transition-all flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-lg sm:text-xl font-bold text-[#0A1938] mb-1.5">{sec.title}</h3>
-                    <p className="text-slate-500 text-xs sm:text-sm font-normal leading-relaxed mb-3.5">{sec.desc}</p>
-                    <ul className="space-y-1.5 text-xs text-slate-600">
-                      {sec.points.map((pt, pIdx) => (
-                        <li key={pIdx} className="flex items-start gap-2">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-[#1D64D8] shrink-0 mt-0.5" />
-                          <span>{pt}</span>
-                        </li>
-                      ))}
-                    </ul>
+            {/* Treatments Section */}
+            <div className="space-y-4">
+              <div className="border-b border-slate-100 pb-3">
+                <span className="text-xs font-bold text-[#1D64D8] tracking-widest uppercase">Comprehensive Treatments</span>
+                <h2 className="text-2xl font-bold text-[#0A1938] mt-1">
+                  Available Dental Treatments &amp; Procedures
+                </h2>
+                <p className="text-slate-500 text-xs sm:text-sm mt-1">
+                  From routine restorative care to high-end smile transformations and digital dental radiology:
+                </p>
+              </div>
+
+              <div className="grid sm:grid-cols-2 gap-4">
+                {dentalTreatments.map((treatment, idx) => (
+                  <div
+                    key={idx}
+                    className="bg-white rounded-2xl p-5 border border-slate-100 shadow-[0_4px_20px_rgba(10,25,56,0.04)] hover:shadow-md hover:border-sky-100 transition-all flex flex-col justify-between"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between gap-2 mb-2">
+                        <span className="text-[10px] font-bold text-[#1D64D8] bg-[#EBF5FE] px-2 py-0.5 rounded-md">
+                          {treatment.badge}
+                        </span>
+                        <span className="text-xs font-bold text-slate-300">#{idx + 1}</span>
+                      </div>
+                      <h3 className="text-base font-bold text-[#0A1938] mb-1.5">
+                        {treatment.name}
+                      </h3>
+                      <p className="text-slate-500 text-xs leading-relaxed font-normal">
+                        {treatment.desc}
+                      </p>
+                    </div>
+
+                    <div className="mt-4 pt-3 border-t border-slate-50 flex items-center justify-between text-[11px] text-[#1D64D8] font-medium">
+                      <span>Available Daily</span>
+                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
+
+            {/* Patient Hygiene & Safety Assurance */}
+            <div className="bg-[#F8FAFD] rounded-3xl p-6 border border-sky-100/70 space-y-3">
+              <div className="flex items-center gap-2 text-xs font-bold text-[#1D64D8] uppercase tracking-wider">
+                <ShieldCheck className="w-4 h-4 text-[#1D64D8]" />
+                <span>Sterilization &amp; Clinical Safety Standards</span>
+              </div>
+              <h3 className="text-lg font-bold text-[#0A1938]">
+                Strict 4-Step Autoclave &amp; Infection Control Protocols
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                Your oral health and safety are our highest priorities. All instruments undergo class-B vacuum autoclaving, pouch-sealing, and sterile chair-side opening. Coupled with our instant RVG digital dental X-rays, you receive prompt diagnosis with minimal radiation exposure.
+              </p>
+            </div>
+
           </div>
 
-          {/* Sidebar */}
-          <div className="lg:col-span-4 space-y-5">
-            <div className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-100 shadow-[0_4px_20px_rgba(10,25,56,0.04)] sticky top-24">
-              <h3 className="text-xl font-bold text-[#0A1938] mb-1.5">Book Dental Visit</h3>
-              <p className="text-slate-500 text-xs mb-4 font-normal">
-                Consultation and gentle treatments for patients of all age groups.
+          {/* Sidebar CTA */}
+          <div className="lg:col-span-4 space-y-6">
+            <div className="bg-[#0A1938] text-white rounded-3xl p-6 sm:p-7 shadow-xl sticky top-24 space-y-5">
+              <div className="text-xs font-bold tracking-widest text-[#38BDF8] uppercase">
+                EXPERT DENTAL CONSULTATION
+              </div>
+              <h3 className="text-2xl font-extrabold leading-snug">
+                Book a Dental Consultation
+              </h3>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                Consult with Dr. Neha Jangra for painless consultations, tooth pain evaluation, implants, or cosmetic smile designing.
               </p>
 
-              <div className="space-y-2.5 mb-5">
-                <div className="flex items-center gap-2.5 text-xs text-slate-700">
-                  <ShieldCheck className="w-3.5 h-3.5 text-teal-600 shrink-0" />
-                  <span>Strict Sterilization &amp; Hygiene</span>
+              <div className="space-y-3 text-xs text-slate-200 border-t border-slate-700/60 pt-4">
+                <div className="flex items-center gap-2.5">
+                  <Sparkles className="w-4 h-4 text-[#38BDF8] shrink-0" />
+                  <span>In-House &amp; On-Call Specialist Doctors</span>
                 </div>
-                <div className="flex items-center gap-2.5 text-xs text-slate-700">
-                  <Sparkles className="w-3.5 h-3.5 text-teal-600 shrink-0" />
-                  <span>Gentle &amp; Comfortable Approach</span>
+                <div className="flex items-center gap-2.5">
+                  <Activity className="w-4 h-4 text-[#38BDF8] shrink-0" />
+                  <span>Instant RVG Digital Dental X-Rays</span>
                 </div>
-                <div className="flex items-center gap-2.5 text-xs text-slate-700">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-teal-600 shrink-0" />
-                  <span>Modern Dental Instrumentation</span>
+                <div className="flex items-center gap-2.5">
+                  <Clock className="w-4 h-4 text-[#38BDF8] shrink-0" />
+                  <span>Mon – Sat: 9:00 AM – 7:30 PM</span>
                 </div>
               </div>
 
-              <a
-                href="https://wa.me/919813503420?text=Hello%20Jangra%20Diagnostics%2C%20I%20would%20like%20to%20book%20a%20Dental%20Consultation%20with%20Dr.%20Neha%20Jangra."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full bg-teal-600 hover:bg-teal-700 text-white font-medium py-3 rounded-full shadow-sm transition-colors flex items-center justify-center gap-2 text-xs sm:text-sm cursor-pointer"
-              >
-                <Calendar className="w-4 h-4" />
-                <span>Book Dental Appointment</span>
-              </a>
-
-              <div className="mt-3.5 pt-3.5 border-t border-slate-100 text-center">
-                <p className="text-xs text-slate-400 mb-0.5">Clinic Desk:</p>
-                <a href="tel:+919813503419" className="text-sm font-medium text-[#0A1938] hover:text-[#1D64D8] flex items-center justify-center gap-2">
-                  <Phone className="w-3.5 h-3.5 text-[#1D64D8]" />
-                  <span>+91 9813503419</span>
+              <div className="space-y-3 pt-2">
+                <a
+                  href="https://wa.me/919813503420?text=Hello%20Jangra%20Diagnostics%2C%20I%20would%20like%20to%20book%20a%20Dental%20Consultation%20with%20Dr.%20Neha%20Jangra."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-[#1D64D8] hover:bg-[#1554B8] text-white font-semibold py-3.5 rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 text-xs sm:text-sm cursor-pointer"
+                >
+                  <Calendar className="w-4 h-4" />
+                  <span>Book on WhatsApp (9813503420)</span>
                 </a>
+
+                <a
+                  href="tel:+919813503419"
+                  className="w-full bg-white/10 hover:bg-white/15 text-white font-medium py-3 rounded-2xl transition-all flex items-center justify-center gap-2 text-xs border border-white/10"
+                >
+                  <Phone className="w-3.5 h-3.5 text-[#38BDF8]" />
+                  <span>Call Directly: +91 9813503419</span>
+                </a>
+              </div>
+
+              <div className="pt-3 border-t border-slate-700/60 text-[11px] text-slate-400">
+                📍 Sonipat Road, Near India&apos;s First Elevated Railway Track, Rohtak
               </div>
             </div>
           </div>

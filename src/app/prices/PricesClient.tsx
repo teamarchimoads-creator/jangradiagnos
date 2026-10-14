@@ -43,33 +43,29 @@ function PricesTable({ testPrices }: { testPrices: { name: string; price: number
 
       {/* Table */}
       <div className="overflow-x-auto">
-        <table className="w-full text-left border-collapse min-w-[600px]">
+        <table className="w-full text-left border-collapse min-w-[500px]">
           <thead>
             <tr className="bg-[#F8FAFC] text-slate-500 text-[11px] font-bold uppercase tracking-wider border-b border-slate-100">
-              <th className="py-3 px-5 sm:px-6">Investigation Name</th>
-              <th className="py-3 px-5 text-right">Standard Price</th>
-              <th className="py-3 px-5 sm:px-6 text-center w-32">Inquiry</th>
+              <th className="py-3.5 px-5 sm:px-6">Investigation Name</th>
+              <th className="py-3.5 px-5 sm:px-6 text-right w-44">Inquiry &amp; Booking</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-100">
             {filteredTests.map((test, index) => (
               <tr key={index} className="hover:bg-[#F5F9FD]/60 transition-colors duration-150">
-                <td className="py-3 px-5 sm:px-6 text-slate-800 font-normal text-xs sm:text-sm">
+                <td className="py-3.5 px-5 sm:px-6 text-slate-800 font-medium text-xs sm:text-sm">
                   {test.name}
                 </td>
-                <td className="py-3 px-5 text-right font-bold text-base sm:text-lg text-[#0A1938]">
-                  ₹{test.price}
-                </td>
-                <td className="py-3 px-5 sm:px-6 text-center">
+                <td className="py-3.5 px-5 sm:px-6 text-right">
                   <a
-                    href={`https://wa.me/919813503420?text=${encodeURIComponent(
-                      `I want to enquire about test: ${test.name}`
+                    href={`https://wa.me/917988241350?text=${encodeURIComponent(
+                      `Hello Jangra Diagnostics, I want to enquire about the price and appointment for: ${test.name}`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#1D64D8] hover:bg-[#1554B8] text-white px-3.5 py-1.5 rounded-full font-semibold text-xs transition-colors inline-flex items-center gap-1.5 shadow-sm"
+                    className="bg-[#1D64D8] hover:bg-[#1554B8] text-white px-4 py-1.5 rounded-full font-semibold text-xs transition-colors inline-flex items-center gap-1.5 shadow-sm active:scale-98"
                   >
-                    <MessageCircle className="w-3 h-3" />
+                    <MessageCircle className="w-3.5 h-3.5 text-emerald-300" />
                     <span>Inquire</span>
                   </a>
                 </td>
@@ -77,7 +73,7 @@ function PricesTable({ testPrices }: { testPrices: { name: string; price: number
             ))}
             {filteredTests.length === 0 && (
               <tr>
-                <td colSpan={3} className="py-16 text-center text-slate-500">
+                <td colSpan={2} className="py-16 text-center text-slate-500">
                   <p className="font-bold text-lg text-[#0A1938] mb-1">No investigations found</p>
                   <p className="text-xs text-slate-400">Try searching with a different test keyword or contact our desk directly.</p>
                 </td>

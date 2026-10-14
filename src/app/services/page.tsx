@@ -15,56 +15,49 @@ export default function ServicesPage() {
       name: "Ultrasound Services",
       slug: "ultrasound",
       href: "/services/ultrasound",
-      img: "/services/ultrasound.jpg",
+      img: "/enhanced/ultrasound.png",
       desc: "Level-1 & Level-2, 3D/4D, Pregnancy Ultrasound, Doppler and specialized high-resolution sonographic investigations."
     },
     {
       name: "Digital X-Ray",
       slug: "digital-x-ray",
       href: "/services/digital-x-ray",
-      img: "/services/xray.jpg",
+      img: "/enhanced/operator.png",
       desc: "Instant digital imaging for general and special radiographic investigations including HSG with minimal radiation exposure."
     },
     {
       name: "Pathology Laboratory",
       slug: "pathology",
       href: "/services/pathology",
-      img: "/services/pathology.jpg",
+      img: "/enhanced/lab.png",
       desc: "Partnered with MAX LAB — a unit of Max Healthcare Institute Limited — for all routine and advanced blood, urine and fluid analyses."
     },
     {
-      name: "CT Scan & Advanced Cross-Sectional Imaging",
-      slug: "ct-scan",
-      href: "/services",
-      img: "/services/ct-scan.jpg",
-      desc: "High-speed multi-slice computed tomography providing clear cross-sectional anatomical detail for prompt clinical decisions."
-    },
-    {
-      name: "MRI Diagnostic Scans",
-      slug: "mri",
-      href: "/services",
-      img: "/services/mri.jpg",
-      desc: "Superior contrast resolution imaging for neuro, spine, musculoskeletal, and soft tissue diagnostic investigations."
+      name: "Wellness & Preventive Health Clinic",
+      slug: "wellness",
+      href: "/services/wellness",
+      img: "/enhanced/doctors.png",
+      desc: "Proactive health assessments, routine screenings, lifestyle consultations, and chronic disease monitoring for long-term health."
     },
     {
       name: "Dental Care Clinic",
       slug: "dental",
       href: "/services/dental",
-      img: "/services/dental.jpg",
-      desc: "Complete dental care, checkups, cavity restorations, and preventive hygiene under Dr. Neha Jangra (BDS, MMC Ambala)."
+      img: "/enhanced/dentalDoctor.png",
+      desc: "All dental treatments by in-house & on-call specialists: RCT, Implants, Smile Designing, Veneers, Crowns, Scaling, Whitening & RVG X-Rays under Dr. Neha Jangra."
     },
     {
       name: "Guided Procedures & Intervention",
       slug: "guided-procedures",
       href: "/services/guided-procedures",
-      img: "/services/ultrasound.jpg",
+      img: "/enhanced/ultrasound.png",
       desc: "Real-time image-guided clinical procedures including FNAC, core biopsy, abscess drainage, and therapeutic fluid aspiration."
     },
     {
       name: "Free Home Sample Collection",
       slug: "home-sample-collection",
       href: "/#home-collection",
-      img: "/services/pathology.jpg",
+      img: "/enhanced/lab.png",
       desc: "Convenient and prompt blood and urine sample collection from the comfort of your home across Rohtak (9813503420)."
     }
   ];

@@ -60,7 +60,11 @@ export default function AboutPage() {
           <div className="relative pr-3 pb-3 sm:pr-5 sm:pb-5">
             <div className="absolute bottom-0 right-0 w-[94%] h-[94%] bg-[#C6E0F9] rounded-[28px] sm:rounded-[32px] pointer-events-none" />
             <div className="relative rounded-[24px] sm:rounded-[28px] overflow-hidden shadow-lg border-2 border-white bg-slate-100 z-10 aspect-[4/3]">
-              <img src="/gallery/image_1.jpeg" alt="Jangra Diagnostics Centre Reception" className="w-full h-full object-cover" />
+              <img 
+                src="/enhanced/entrance.png" 
+                alt="Jangra Diagnostic Centre & Dental Clinic Facility Campus" 
+                className="w-full h-full object-cover" 
+              />
             </div>
           </div>
         </div>
@@ -109,8 +113,12 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {/* Doctor 1: Dr. Krishan Jangra */}
             <div className="bg-white rounded-[24px] sm:rounded-[28px] p-6 sm:p-7 border border-slate-100 shadow-[0_6px_25px_rgba(29,100,216,0.04)] hover:shadow-md transition-all flex flex-col sm:flex-row gap-5 items-center sm:items-start text-center sm:text-left group">
-              <div className="w-16 h-16 sm:w-18 sm:h-18 rounded-2xl bg-[#EBF5FE] border border-sky-100 overflow-hidden shrink-0 shadow-sm flex items-center justify-center text-[#1D64D8]">
-                <Stethoscope className="w-8 h-8" />
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden shrink-0 border-2 border-sky-100 shadow-md bg-slate-100">
+                <img
+                  src="/newPictures/WhatsApp Image 2026-10-14 at 1.37.14 PM.jpeg"
+                  alt="Dr. Krishan Jangra Consultant Radiologist"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="space-y-1.5 flex-1">
                 <span className="inline-block text-[10px] font-semibold text-[#1D64D8] bg-[#EBF5FE] border border-sky-100 px-2.5 py-0.5 rounded-full uppercase tracking-wider">
@@ -126,8 +134,12 @@ export default function AboutPage() {
 
             {/* Doctor 2: Dr. Neha Jangra */}
             <div className="bg-white rounded-[24px] sm:rounded-[28px] p-6 sm:p-7 border border-slate-100 shadow-[0_6px_25px_rgba(29,100,216,0.04)] hover:shadow-md transition-all flex flex-col sm:flex-row gap-5 items-center sm:items-start text-center sm:text-left group">
-              <div className="w-16 h-16 sm:w-18 sm:h-18 rounded-2xl bg-[#F0FDF4] border border-emerald-100 overflow-hidden shrink-0 shadow-sm flex items-center justify-center text-emerald-600">
-                <Sparkles className="w-8 h-8" />
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden shrink-0 border-2 border-emerald-100 shadow-md bg-slate-100">
+                <img
+                  src="/newPictures/WhatsApp Image 2026-10-14 at 1.37.04 PM.jpeg"
+                  alt="Dr. Neha Jangra Dental Surgeon"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="space-y-1.5 flex-1">
                 <span className="inline-block text-[10px] font-semibold text-emerald-700 bg-emerald-50 border border-emerald-100 px-2.5 py-0.5 rounded-full uppercase tracking-wider">
@@ -140,6 +152,16 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
+          </div>
+
+          <div className="text-center mt-8">
+            <Link
+              href="/gallery"
+              className="inline-flex items-center gap-2 bg-[#F5F9FD] hover:bg-[#EEF6FD] text-[#1D64D8] border border-sky-200/80 px-6 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all shadow-2xs hover:shadow-xs"
+            >
+              <span>Explore Centre &amp; Facility Photo Gallery</span>
+              <span>→</span>
+            </Link>
           </div>
         </div>
 

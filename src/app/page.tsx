@@ -17,6 +17,7 @@ import CallbackModal from "@/components/CallbackModal";
 import { 
   CTScanIcon, MRIIcon, XRayIcon, UltrasoundIcon, PathologyIcon, DentalCareIcon 
 } from "@/components/ServiceIcons";
+import HealthPackagesTeaser from "@/components/HealthPackagesTeaser";
 
 export default function HomePage() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
@@ -102,15 +103,17 @@ export default function HomePage() {
     <div className="flex flex-col w-full bg-white min-h-screen">
 
       {/* ========================================================
-          1. HERO SECTION (Ditto Match to User Reference Screenshot)
+          1. HERO SECTION (With Authentic Medical Team & Facilities Suite)
          ======================================================== */}
-      <section className="relative w-full bg-white text-slate-900 overflow-hidden py-5 sm:py-8 lg:py-14 border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <section className="relative w-full bg-gradient-to-b from-white via-[#FAFDFE] to-white text-slate-900 overflow-hidden pt-5 pb-8 sm:pt-8 sm:pb-12 border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6 sm:space-y-8">
+          
+          {/* Top Row: Left Headline & CTAs | Right Real Team Image */}
           <div className="grid lg:grid-cols-12 gap-6 lg:gap-10 items-center">
             
             {/* Left Column: Heading & CTAs */}
-            <div className="lg:col-span-6 space-y-2.5 sm:space-y-4 lg:space-y-5">
-              {/* Eyebrow - Matching reference styling exactly */}
+            <div className="lg:col-span-6 space-y-3 sm:space-y-4">
+              {/* Eyebrow */}
               <div className="text-[11px] sm:text-xs md:text-sm font-bold tracking-[0.16em] sm:tracking-[0.2em] text-[#1D64D8] uppercase flex items-center gap-1.5 sm:gap-2">
                 <span>ACCURATE</span>
                 <span className="text-slate-300 font-normal">/</span>
@@ -119,20 +122,20 @@ export default function HomePage() {
                 <span>TRUSTED</span>
               </div>
 
-              {/* Main Headline - Bold Sans Two-Tone Headline */}
-              <h1 className="text-[28px] xs:text-3xl sm:text-4xl md:text-5xl lg:text-[58px] xl:text-[64px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.08]">
+              {/* Main Headline */}
+              <h1 className="text-[28px] xs:text-3xl sm:text-4xl md:text-5xl lg:text-[50px] xl:text-[54px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.08]">
                 <span className="text-[#0A1938] block">Advanced Diagnostics</span>
                 <span className="text-[#1D64D8] block">for a Healthier Tomorrow</span>
               </h1>
 
               {/* Description */}
-              <p className="text-xs sm:text-sm md:text-base text-slate-500 max-w-lg leading-relaxed font-normal">
-                State-of-the-art technology, expert radiologists and compassionate care, all under one roof.
+              <p className="text-xs sm:text-sm md:text-base text-slate-600 max-w-lg leading-relaxed font-normal">
+                Led by Consultant Radiologist Dr. Krishan Jangra &amp; Dental Surgeon Dr. Neha Jangra. Bringing high-precision ultrasound, digital X-rays, Max Lab pathology, and compassionate care under one roof.
               </p>
 
               {/* Buttons Row with Download Report Button & Animated Pointing Finger */}
-              <div className="flex flex-wrap items-center gap-2.5 sm:gap-3.5 pt-1.5 sm:pt-3">
-                {/* Primary CTA: Royal Blue Pill Button */}
+              <div className="flex flex-wrap items-center gap-2.5 sm:gap-3.5 pt-1">
+                {/* Primary CTA */}
                 <button
                   type="button"
                   suppressHydrationWarning
@@ -146,7 +149,6 @@ export default function HomePage() {
 
                 {/* Download Report Button with Pointing Finger Animation */}
                 <div className="relative inline-flex items-center mt-3 sm:mt-0">
-                  {/* Floating pointer callout badge */}
                   <div className="absolute -top-5 sm:-top-6 left-3 flex items-center gap-1 bg-[#EBF5FE] text-[#1D64D8] border border-sky-200 px-2 py-0.5 rounded-full text-[9px] sm:text-[10px] font-extrabold uppercase tracking-wider shadow-2xs animate-point-finger-y pointer-events-none z-10 whitespace-nowrap">
                     <span>👇</span>
                     <span>Check Reports Online</span>
@@ -164,7 +166,7 @@ export default function HomePage() {
                   </Link>
                 </div>
 
-                {/* Secondary CTA: Our Services with play button icon */}
+                {/* Secondary CTA */}
                 <Link
                   href="/services"
                   className="inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700 hover:text-[#1D64D8] px-2.5 sm:px-3.5 py-1.5 sm:py-2.5 rounded-full hover:bg-slate-50 transition-colors group"
@@ -176,40 +178,221 @@ export default function HomePage() {
                 </Link>
               </div>
 
-              {/* Motto / Accreditation strip */}
-              <div className="pt-0.5 sm:pt-1 flex items-center gap-2 text-[11px] sm:text-xs text-slate-400">
-                <span className="italic text-slate-600">“Think of quality, Think of us.”</span>
+              {/* Trust Strip */}
+              <div className="pt-1.5 flex flex-wrap items-center gap-2.5 text-[11px] sm:text-xs text-slate-500">
+                <span className="inline-flex items-center gap-1.5 font-semibold text-[#0A1938]">
+                  <ShieldCheck className="w-3.5 h-3.5 text-[#1D64D8]" />
+                  <span>Max Lab Network Partner</span>
+                </span>
                 <span>•</span>
-                <span className="text-slate-500">Serving Rohtak Since 2013</span>
+                <span>Serving Rohtak Since 2013</span>
+                <span>•</span>
+                <span className="italic text-slate-600">“Think of quality, Think of us.”</span>
               </div>
             </div>
 
-            {/* Right Column: Hero Diagnostic Scanner Visual */}
+            {/* Right Column: Hero Medical Team Photo (WhatsApp Image 2026-10-14 at 1.37.03 PM) */}
             <div className="lg:col-span-6 relative">
               <div className="relative mx-auto max-w-lg lg:max-w-none">
-                {/* Curved Container with Scanner Photo */}
-                <div className="relative rounded-[32px] overflow-hidden shadow-xl border border-slate-100 aspect-[16/11] bg-slate-50">
-                  <img
-                    src="/hero_scanner.jpg"
-                    alt="Advanced Medical Scanner at Jangra Diagnostics"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                {/* Soft decorative shadow frame */}
+                <div className="absolute -inset-1.5 bg-gradient-to-tr from-[#1D64D8]/20 via-sky-200/30 to-[#1D64D8]/10 rounded-[30px] sm:rounded-[34px] blur-sm -z-10" />
 
-                {/* Floating White Card matching reference UI */}
-                <div className="absolute -bottom-4 left-4 sm:left-6 bg-white text-slate-900 rounded-2xl p-3.5 shadow-xl border border-slate-100 flex items-center gap-3 max-w-xs animate-in fade-in slide-in-from-bottom-4 duration-500">
-                  <div className="w-9 h-9 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-[#1D64D8] shrink-0">
-                    <HeartPulse className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-xs text-[#0A1938] leading-tight">Your Health</h4>
-                    <p className="text-[10px] text-slate-400 font-medium">Our Priority</p>
+                <div className="relative rounded-[26px] sm:rounded-[30px] overflow-hidden bg-white border-2 border-white shadow-[0_12px_45px_rgba(29,100,216,0.12)]">
+                  <div className="aspect-[4/3] sm:aspect-[16/11] relative overflow-hidden bg-slate-100">
+                    <img
+                      src="/enhanced/Hero%20image.png"
+                      alt="Dr. Krishan Jangra, Dr. Neha Jangra and Clinical Team at Jangra Diagnostic Centre Rohtak"
+                      className="w-full h-full object-cover object-center"
+                    />
+
+                    {/* Top Floating Badge */}
+                    <div className="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-full shadow-md border border-slate-100 flex items-center gap-2">
+                      <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
+                      <span className="text-[11px] font-bold text-[#0A1938]">Senior Consultants &amp; Clinical Care Team</span>
+                    </div>
+
+                    {/* Bottom Floating Card */}
+                    <div className="absolute bottom-3 inset-x-3 sm:inset-x-4 bg-[#0A1938]/92 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-xl border border-white/10 text-white flex items-center justify-between gap-3">
+                      <div>
+                        <div className="text-[11px] sm:text-xs font-bold text-white flex items-center gap-1.5">
+                          <Stethoscope className="w-3.5 h-3.5 text-[#38BDF8]" />
+                          <span>Dr. Krishan Jangra &amp; Dr. Neha Jangra</span>
+                        </div>
+                        <div className="text-[10px] text-slate-300">
+                          Consultant Radiologist &amp; Lead Dental Surgeon • With Support Staff
+                        </div>
+                      </div>
+                      <Link
+                        href="/doctors"
+                        className="bg-white/15 hover:bg-white/25 text-[#38BDF8] text-[10px] font-semibold px-2.5 py-1 rounded-full transition-colors shrink-0"
+                      >
+                        Meet Doctors →
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
           </div>
+
+          {/* Bottom Card: Official Facilities of Diagnostic Centre (from Official Brochure) */}
+          <div className="bg-white rounded-[28px] sm:rounded-[32px] p-5 sm:p-7 border border-slate-100 shadow-[0_12px_45px_rgba(29,100,216,0.06)] relative overflow-hidden">
+            {/* Soft top gradient accent curve matching brochure top blue wave */}
+            <div className="absolute top-0 inset-x-0 h-2 bg-gradient-to-r from-sky-400 via-[#1D64D8] to-sky-400" />
+            
+            {/* Header matching brochure */}
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 sm:mb-5 border-b border-slate-100 pb-3 gap-2">
+              <div>
+                <span className="text-[10px] sm:text-[11px] font-bold text-[#1D64D8] tracking-[0.2em] uppercase block">
+                  OFFICIAL ADVANCED SUITE • JANGRA DIAGNOSTICS ROHTAK
+                </span>
+                <h2 className="text-xl sm:text-2xl font-black text-[#D32F2F] tracking-tight uppercase">
+                  FACILITIES OF DIAGNOSTIC CENTRE :
+                </h2>
+              </div>
+              <span className="text-[11px] font-semibold text-slate-500 bg-slate-50 px-3 py-1 rounded-full border border-slate-100 self-start sm:self-auto">
+                Opp. Gymkhana Club, Sonipat Road
+              </span>
+            </div>
+
+            {/* 6 Facilities with Exact Colors & Circular Icons matching brochure in 3-column / 2-column grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-3">
+              {/* 1. 3D/4D Colour Doppler Ultrasound */}
+              <Link
+                href="/services/ultrasound"
+                className="flex items-center gap-2.5 sm:gap-3 group"
+              >
+                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border-2 border-slate-200 bg-white shadow-2xs flex items-center justify-center text-slate-700 shrink-0 group-hover:border-[#D97724] group-hover:text-[#D97724] transition-colors">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M4 12c0-4.4 3.6-8 8-8s8 3.6 8 8" />
+                    <path d="M7 13c1-2 3-3 5-3s4 1 5 3" />
+                    <circle cx="12" cy="16" r="2.5" />
+                  </svg>
+                </div>
+                <div className="flex-1 bg-[#D97724] hover:bg-[#C2651B] text-white font-extrabold text-[11px] sm:text-xs md:text-sm px-4 py-2 sm:py-2.5 rounded-full shadow-xs tracking-wider uppercase transition-all flex items-center justify-between transform group-hover:-translate-y-0.5">
+                  <span>3D/4D COLOUR DOPPLER ULTRASOUND</span>
+                  <ChevronRight className="w-3.5 h-3.5 opacity-80 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" />
+                </div>
+              </Link>
+
+              {/* 2. Digital X-Rays */}
+              <Link
+                href="/services/digital-x-ray"
+                className="flex items-center gap-2.5 sm:gap-3 group"
+              >
+                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border-2 border-slate-200 bg-white shadow-2xs flex items-center justify-center text-slate-700 shrink-0 group-hover:border-[#DC2626] group-hover:text-[#DC2626] transition-colors">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="5" y="3" width="14" height="18" rx="2" />
+                    <line x1="12" y1="6" x2="12" y2="18" />
+                    <line x1="9" y1="9" x2="15" y2="9" />
+                    <line x1="8" y1="12" x2="16" y2="12" />
+                    <line x1="9" y1="15" x2="15" y2="15" />
+                  </svg>
+                </div>
+                <div className="flex-1 bg-[#DC2626] hover:bg-[#B91C1C] text-white font-extrabold text-[11px] sm:text-xs md:text-sm px-4 py-2 sm:py-2.5 rounded-full shadow-xs tracking-wider uppercase transition-all flex items-center justify-between transform group-hover:-translate-y-0.5">
+                  <span>DIGITAL X-RAYS</span>
+                  <ChevronRight className="w-3.5 h-3.5 opacity-80 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" />
+                </div>
+              </Link>
+
+              {/* 3. IVP/HSG/MCU/RGU/BARIUM STUDY */}
+              <Link
+                href="/services/digital-x-ray"
+                className="flex items-center gap-2.5 sm:gap-3 group"
+              >
+                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border-2 border-slate-200 bg-white shadow-2xs flex items-center justify-center text-slate-700 shrink-0 group-hover:border-[#0284C7] group-hover:text-[#0284C7] transition-colors">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M14.5 2v4.5M9.5 2v4.5" />
+                    <path d="M6 6.5h12l-1.5 12a3 3 0 0 1-3 2.5h-3a3 3 0 0 1-3-2.5L6 6.5z" />
+                    <line x1="9" y1="12" x2="15" y2="12" />
+                  </svg>
+                </div>
+                <div className="flex-1 bg-[#0284C7] hover:bg-[#0369A1] text-white font-extrabold text-[11px] sm:text-xs md:text-sm px-4 py-2 sm:py-2.5 rounded-full shadow-xs tracking-wider uppercase transition-all flex items-center justify-between transform group-hover:-translate-y-0.5">
+                  <span>IVP/HSG/MCU/RGU/BARIUM STUDY</span>
+                  <ChevronRight className="w-3.5 h-3.5 opacity-80 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" />
+                </div>
+              </Link>
+
+              {/* 4. DEDICATED ULTRASONIC MAMMOGRAPHY */}
+              <Link
+                href="/services/ultrasound"
+                className="flex items-center gap-2.5 sm:gap-3 group"
+              >
+                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border-2 border-slate-200 bg-white shadow-2xs flex items-center justify-center text-slate-700 shrink-0 group-hover:border-[#16A34A] group-hover:text-[#16A34A] transition-colors">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M4 8a8 8 0 0 1 16 0c0 5-4 10-8 13-4-3-8-8-8-13z" />
+                    <circle cx="12" cy="11" r="2.5" />
+                  </svg>
+                </div>
+                <div className="flex-1 bg-[#16A34A] hover:bg-[#15803D] text-white font-extrabold text-[11px] sm:text-xs md:text-sm px-4 py-2 sm:py-2.5 rounded-full shadow-xs tracking-wider uppercase transition-all flex items-center justify-between transform group-hover:-translate-y-0.5">
+                  <span>DEDICATED ULTRASONIC MAMMOGRAPHY</span>
+                  <ChevronRight className="w-3.5 h-3.5 opacity-80 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" />
+                </div>
+              </Link>
+
+              {/* 5. BLOOD TESTS */}
+              <Link
+                href="/services/pathology"
+                className="flex items-center gap-2.5 sm:gap-3 group"
+              >
+                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border-2 border-slate-200 bg-white shadow-2xs flex items-center justify-center text-slate-700 shrink-0 group-hover:border-[#1E3A8A] group-hover:text-[#1E3A8A] transition-colors">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 2.5c-2.5 3.5-6 7.5-6 11.5a6 6 0 0 0 12 0c0-4-3.5-8-6-11.5z" fill="#DC2626" stroke="#DC2626" fillOpacity="0.25" />
+                  </svg>
+                </div>
+                <div className="flex-1 bg-[#1E3A8A] hover:bg-[#1E40AF] text-white font-extrabold text-[11px] sm:text-xs md:text-sm px-4 py-2 sm:py-2.5 rounded-full shadow-xs tracking-wider uppercase transition-all flex items-center justify-between transform group-hover:-translate-y-0.5">
+                  <span>BLOOD TESTS</span>
+                  <ChevronRight className="w-3.5 h-3.5 opacity-80 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" />
+                </div>
+              </Link>
+
+              {/* 6. URINE EXAMINATION ETC. */}
+              <Link
+                href="/services/pathology"
+                className="flex items-center gap-2.5 sm:gap-3 group"
+              >
+                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border-2 border-slate-200 bg-white shadow-2xs flex items-center justify-center text-slate-700 shrink-0 group-hover:border-[#0F766E] group-hover:text-[#0F766E] transition-colors">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="7" y="4" width="10" height="3" rx="1" />
+                    <path d="M8 7v10a3 3 0 0 0 3 3h2a3 3 0 0 0 3-3V7" />
+                    <line x1="10" y1="12" x2="14" y2="12" strokeDasharray="1 1" />
+                  </svg>
+                </div>
+                <div className="flex-1 bg-[#0F766E] hover:bg-[#115E59] text-white font-extrabold text-[11px] sm:text-xs md:text-sm px-4 py-2 sm:py-2.5 rounded-full shadow-xs tracking-wider uppercase transition-all flex items-center justify-between transform group-hover:-translate-y-0.5">
+                  <span>URINE EXAMINATION ETC.</span>
+                  <ChevronRight className="w-3.5 h-3.5 opacity-80 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" />
+                </div>
+              </Link>
+            </div>
+
+            {/* 3D Folded Ribbon Banner: LIVER ELASTOGRAPHY & FAT QUANTIFICATION */}
+            <div className="pt-4 pb-2 flex justify-center">
+              <div className="relative inline-block w-full max-w-md">
+                {/* Folded ribbon background ears */}
+                <div className="absolute -left-2 top-2.5 w-4 h-full bg-[#9E1250] -skew-y-12 rounded-l -z-10" />
+                <div className="absolute -right-2 top-2.5 w-4 h-full bg-[#9E1250] skew-y-12 rounded-r -z-10" />
+
+                <Link
+                  href="/services/ultrasound"
+                  className="block bg-gradient-to-r from-[#D6336C] via-[#BE185D] to-[#D6336C] text-white px-4 sm:px-6 py-2.5 rounded-xl shadow-md hover:shadow-lg transition-all text-center border-t border-pink-300/40 transform hover:-translate-y-0.5"
+                >
+                  <div className="text-[11px] sm:text-xs md:text-sm font-black tracking-wider uppercase drop-shadow-sm flex items-center justify-center gap-2">
+                    <Sparkles className="w-4 h-4 text-pink-200 shrink-0" />
+                    <span>LIVER ELASTOGRAPHY &amp; FAT QUANTIFICATION</span>
+                  </div>
+                </Link>
+              </div>
+            </div>
+
+            {/* Slogan matching brochure */}
+            <div className="pt-2 text-center">
+              <span className="font-serif italic font-bold text-lg sm:text-xl text-[#8E283B] tracking-wide block">
+                &ldquo;Think of Quality Think of Us&rdquo;
+              </span>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -240,99 +423,18 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* 2x3 Grid matching reference screenshot with high-res service images */}
+          {/* 2x3 Grid with high-res service images */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
             
-            {/* Card 1: CT Scan */}
-            <Link
-              href="/services"
-              className="bg-white rounded-3xl p-5 sm:p-6 border border-slate-100 shadow-[0_4px_24px_rgba(29,100,216,0.04)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group overflow-hidden"
-            >
-              <div className="relative h-44 sm:h-48 w-full overflow-hidden rounded-2xl mb-4 bg-slate-100">
-                <img
-                  src="/services/ct-scan.jpg"
-                  alt="CT Scan Service"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute top-3 left-3 w-10 h-10 rounded-xl bg-white/95 backdrop-blur-md flex items-center justify-center text-[#1D64D8] shadow-sm">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="9" />
-                    <circle cx="12" cy="12" r="4.5" />
-                    <circle cx="12" cy="12" r="1.5" fill="currentColor" />
-                  </svg>
-                </div>
-              </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-[#0A1938] mb-1.5 group-hover:text-[#1D64D8] transition-colors tracking-tight">
-                CT Scan
-              </h3>
-              <p className="text-slate-500 text-xs sm:text-sm leading-relaxed font-normal">
-                Detailed cross-sectional imaging for accurate diagnosis.
-              </p>
-            </Link>
-
-            {/* Card 2: MRI */}
-            <Link
-              href="/services"
-              className="bg-white rounded-3xl p-5 sm:p-6 border border-slate-100 shadow-[0_4px_24px_rgba(29,100,216,0.04)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group overflow-hidden"
-            >
-              <div className="relative h-44 sm:h-48 w-full overflow-hidden rounded-2xl mb-4 bg-slate-100">
-                <img
-                  src="/services/mri.jpg"
-                  alt="MRI Scan Service"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute top-3 left-3 w-10 h-10 rounded-xl bg-white/95 backdrop-blur-md flex items-center justify-center text-[#1D64D8] shadow-sm">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="9" />
-                    <line x1="7.5" y1="12" x2="16.5" y2="12" strokeWidth="2.5" />
-                  </svg>
-                </div>
-              </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-[#0A1938] mb-1.5 group-hover:text-[#1D64D8] transition-colors tracking-tight">
-                MRI
-              </h3>
-              <p className="text-slate-500 text-xs sm:text-sm leading-relaxed font-normal">
-                High-resolution scans for better clarity.
-              </p>
-            </Link>
-
-            {/* Card 3: X-Ray */}
-            <Link
-              href="/services/digital-x-ray"
-              className="bg-white rounded-3xl p-5 sm:p-6 border border-slate-100 shadow-[0_4px_24px_rgba(29,100,216,0.04)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group overflow-hidden"
-            >
-              <div className="relative h-44 sm:h-48 w-full overflow-hidden rounded-2xl mb-4 bg-slate-100">
-                <img
-                  src="/services/xray.jpg"
-                  alt="Digital X-Ray Service"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute top-3 left-3 w-10 h-10 rounded-xl bg-white/95 backdrop-blur-md flex items-center justify-center text-[#1D64D8] shadow-sm">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <line x1="12" y1="3" x2="12" y2="21" />
-                    <line x1="8" y1="8" x2="16" y2="8" />
-                    <line x1="7" y1="12" x2="17" y2="12" />
-                    <line x1="8" y1="16" x2="16" y2="16" />
-                  </svg>
-                </div>
-              </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-[#0A1938] mb-1.5 group-hover:text-[#1D64D8] transition-colors tracking-tight">
-                X-Ray
-              </h3>
-              <p className="text-slate-500 text-xs sm:text-sm leading-relaxed font-normal">
-                Quick and safe digital X-ray services.
-              </p>
-            </Link>
-
-            {/* Card 4: Ultrasound */}
+            {/* Card 1: Ultrasound */}
             <Link
               href="/services/ultrasound"
               className="bg-white rounded-3xl p-5 sm:p-6 border border-slate-100 shadow-[0_4px_24px_rgba(29,100,216,0.04)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group overflow-hidden"
             >
               <div className="relative h-44 sm:h-48 w-full overflow-hidden rounded-2xl mb-4 bg-slate-100">
                 <img
-                  src="/services/ultrasound.jpg"
-                  alt="Ultrasound Diagnostic Service"
+                  src="/enhanced/ultrasound.png"
+                  alt="Dr. Krishan Jangra conducting Ultrasound Examination in High-Resolution Suite"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-3 left-3 w-10 h-10 rounded-xl bg-white/95 backdrop-blur-md flex items-center justify-center text-[#1D64D8] shadow-sm">
@@ -345,19 +447,47 @@ export default function HomePage() {
                 Ultrasound
               </h3>
               <p className="text-slate-500 text-xs sm:text-sm leading-relaxed font-normal">
-                Safe and painless 3D/4D and Doppler imaging.
+                Safe and painless 3D/4D and Doppler imaging by expert radiologists.
               </p>
             </Link>
 
-            {/* Card 5: Pathology Lab */}
+            {/* Card 2: Digital X-Ray */}
+            <Link
+              href="/services/digital-x-ray"
+              className="bg-white rounded-3xl p-5 sm:p-6 border border-slate-100 shadow-[0_4px_24px_rgba(29,100,216,0.04)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group overflow-hidden"
+            >
+              <div className="relative h-44 sm:h-48 w-full overflow-hidden rounded-2xl mb-4 bg-slate-100">
+                <img
+                  src="/enhanced/operator.png"
+                  alt="Radiographer at Computerized Digital CR Radiography Workstation"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-3 left-3 w-10 h-10 rounded-xl bg-white/95 backdrop-blur-md flex items-center justify-center text-[#1D64D8] shadow-sm">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="12" y1="3" x2="12" y2="21" />
+                    <line x1="8" y1="8" x2="16" y2="8" />
+                    <line x1="7" y1="12" x2="17" y2="12" />
+                    <line x1="8" y1="16" x2="16" y2="16" />
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0A1938] mb-1.5 group-hover:text-[#1D64D8] transition-colors tracking-tight">
+                Digital X-Ray
+              </h3>
+              <p className="text-slate-500 text-xs sm:text-sm leading-relaxed font-normal">
+                Quick, low-radiation and high-contrast digital radiography &amp; HSG.
+              </p>
+            </Link>
+
+            {/* Card 3: Pathology Lab */}
             <Link
               href="/services/pathology"
               className="bg-white rounded-3xl p-5 sm:p-6 border border-slate-100 shadow-[0_4px_24px_rgba(29,100,216,0.04)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group overflow-hidden"
             >
               <div className="relative h-44 sm:h-48 w-full overflow-hidden rounded-2xl mb-4 bg-slate-100">
                 <img
-                  src="/services/pathology.jpg"
-                  alt="Pathology Lab Testing"
+                  src="/enhanced/lab.png"
+                  alt="MAX Lab Partner Clinical Pathology Collection Station at Jangra Diagnostics"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-3 left-3 w-10 h-10 rounded-xl bg-white/95 backdrop-blur-md flex items-center justify-center text-[#1D64D8] shadow-sm">
@@ -370,19 +500,19 @@ export default function HomePage() {
                 Pathology Lab
               </h3>
               <p className="text-slate-500 text-xs sm:text-sm leading-relaxed font-normal">
-                Wide range of blood, urine and other tests.
+                Partnered with MAX LAB for accurate routine &amp; advanced blood tests.
               </p>
             </Link>
 
-            {/* Card 6: Dental Care */}
+            {/* Card 4: Dental Care */}
             <Link
               href="/services/dental"
               className="bg-white rounded-3xl p-5 sm:p-6 border border-slate-100 shadow-[0_4px_24px_rgba(29,100,216,0.04)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group overflow-hidden"
             >
               <div className="relative h-44 sm:h-48 w-full overflow-hidden rounded-2xl mb-4 bg-slate-100">
                 <img
-                  src="/services/dental.jpg"
-                  alt="Dental Care Clinic"
+                  src="/enhanced/dentalDoctor.png"
+                  alt="Dr. Neha Jangra performing Dental Surgery & Restoration in Operatory"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-3 left-3 w-10 h-10 rounded-xl bg-white/95 backdrop-blur-md flex items-center justify-center text-[#1D64D8] shadow-sm">
@@ -395,13 +525,200 @@ export default function HomePage() {
                 Dental Care
               </h3>
               <p className="text-slate-500 text-xs sm:text-sm leading-relaxed font-normal">
-                Comprehensive dental and root canal treatments.
+                Comprehensive dental, scaling &amp; pain-free treatments by Dr. Neha Jangra.
+              </p>
+            </Link>
+
+            {/* Card 5: Wellness Clinic */}
+            <Link
+              href="/services/wellness"
+              className="bg-white rounded-3xl p-5 sm:p-6 border border-slate-100 shadow-[0_4px_24px_rgba(29,100,216,0.04)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group overflow-hidden"
+            >
+              <div className="relative h-44 sm:h-48 w-full overflow-hidden rounded-2xl mb-4 bg-slate-100">
+                <img
+                  src="/enhanced/doctors.png"
+                  alt="Dr. Krishan Jangra and Dr. Neha Jangra at Wellness Consultation Desk"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-3 left-3 w-10 h-10 rounded-xl bg-white/95 backdrop-blur-md flex items-center justify-center text-[#1D64D8] shadow-sm">
+                  <HeartPulse className="w-5 h-5 text-[#1D64D8]" />
+                </div>
+              </div>
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0A1938] mb-1.5 group-hover:text-[#1D64D8] transition-colors tracking-tight">
+                Wellness Clinic
+              </h3>
+              <p className="text-slate-500 text-xs sm:text-sm leading-relaxed font-normal">
+                Preventive health checkups, lifestyle care &amp; routine wellness consultations.
+              </p>
+            </Link>
+
+            {/* Card 6: Patient Helpdesk */}
+            <Link
+              href="/contact"
+              className="bg-white rounded-3xl p-5 sm:p-6 border border-slate-100 shadow-[0_4px_24px_rgba(29,100,216,0.04)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group overflow-hidden"
+            >
+              <div className="relative h-44 sm:h-48 w-full overflow-hidden rounded-2xl mb-4 bg-slate-100">
+                <img
+                  src="/enhanced/helpdesk.png"
+                  alt="Patient Helpdesk & Registration at Jangra Diagnostics Rohtak"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-3 left-3 w-10 h-10 rounded-xl bg-white/95 backdrop-blur-md flex items-center justify-center text-[#1D64D8] shadow-sm">
+                  <Clock className="w-5 h-5 text-[#1D64D8]" />
+                </div>
+              </div>
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0A1938] mb-1.5 group-hover:text-[#1D64D8] transition-colors tracking-tight">
+                Patient Helpdesk
+              </h3>
+              <p className="text-slate-500 text-xs sm:text-sm leading-relaxed font-normal">
+                Prompt registration, appointment assistance, nursing care &amp; fast report delivery.
               </p>
             </Link>
 
           </div>
         </div>
       </section>
+
+      {/* ========================================================
+          WELLNESS CLINIC DEDICATED SECTION
+         ======================================================== */}
+      <section id="wellness-clinic" className="py-12 lg:py-16 bg-[#F8FAFD] border-t border-slate-100 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            {/* Left Column: Heading, Narrative & 4 Pillars */}
+            <div className="lg:col-span-7 space-y-6">
+              <div>
+                <div className="text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-[#1D64D8] mb-2 flex items-center gap-2">
+                  <span>WELLNESS CLINIC</span>
+                  <span className="text-slate-300 font-normal">/</span>
+                  <span>PREVENTIVE HEALTH</span>
+                  <span className="text-slate-300 font-normal">/</span>
+                  <span>LIFESTYLE CARE</span>
+                </div>
+                <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-extrabold tracking-tight leading-[1.14]">
+                  <span className="text-[#0A1938]">Comprehensive </span>
+                  <span className="text-[#1D64D8]">Wellness Clinic</span>
+                  <br />
+                  <span className="text-[#0A1938] text-2xl sm:text-3xl lg:text-[32px] font-bold">for Your Whole Family</span>
+                </h2>
+              </div>
+
+              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-xl font-normal">
+                Healthcare is more than treating illness—it is about preserving health and vitality. At Jangra Wellness Clinic, we provide personalized health assessments, routine screenings, and expert doctor consultations to help you stay ahead of lifestyle risks.
+              </p>
+
+              {/* 4 Wellness Highlights Grid */}
+              <div className="grid sm:grid-cols-2 gap-4 pt-1">
+                <div className="bg-white rounded-2xl p-4 border border-slate-100 shadow-[0_4px_20px_rgba(29,100,216,0.04)] hover:shadow-md transition-all">
+                  <div className="w-9 h-9 rounded-xl bg-[#EBF5FE] text-[#1D64D8] flex items-center justify-center mb-2.5">
+                    <HeartPulse className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-sm font-bold text-[#0A1938] mb-1">Preventive Health Checkups</h3>
+                  <p className="text-[11px] sm:text-xs text-slate-500 leading-relaxed font-normal">
+                    Complete vitals, blood panels, and metabolic risk assessments before symptoms appear.
+                  </p>
+                </div>
+
+                <div className="bg-white rounded-2xl p-4 border border-slate-100 shadow-[0_4px_20px_rgba(29,100,216,0.04)] hover:shadow-md transition-all">
+                  <div className="w-9 h-9 rounded-xl bg-[#F0FDF4] text-emerald-600 flex items-center justify-center mb-2.5">
+                    <Activity className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-sm font-bold text-[#0A1938] mb-1">Chronic Disease Management</h3>
+                  <p className="text-[11px] sm:text-xs text-slate-500 leading-relaxed font-normal">
+                    Targeted monitoring for diabetes, blood pressure, cholesterol, and thyroid disorders.
+                  </p>
+                </div>
+
+                <div className="bg-white rounded-2xl p-4 border border-slate-100 shadow-[0_4px_20px_rgba(29,100,216,0.04)] hover:shadow-md transition-all">
+                  <div className="w-9 h-9 rounded-xl bg-[#FFF7ED] text-amber-600 flex items-center justify-center mb-2.5">
+                    <Users className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-sm font-bold text-[#0A1938] mb-1">Women &amp; Senior Wellness</h3>
+                  <p className="text-[11px] sm:text-xs text-slate-500 leading-relaxed font-normal">
+                    Specialized evaluations for bone mineral density, hormonal wellness, and healthy aging.
+                  </p>
+                </div>
+
+                <div className="bg-white rounded-2xl p-4 border border-slate-100 shadow-[0_4px_20px_rgba(29,100,216,0.04)] hover:shadow-md transition-all">
+                  <div className="w-9 h-9 rounded-xl bg-[#FAF5FF] text-purple-600 flex items-center justify-center mb-2.5">
+                    <Sparkles className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-sm font-bold text-[#0A1938] mb-1">Lifestyle &amp; Diet Guidance</h3>
+                  <p className="text-[11px] sm:text-xs text-slate-500 leading-relaxed font-normal">
+                    Actionable nutrition, physical wellness, and stress reduction tailored to your body reports.
+                  </p>
+                </div>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="flex flex-wrap items-center gap-3 pt-2">
+                <button
+                  type="button"
+                  suppressHydrationWarning
+                  onClick={() => setIsBookingOpen(true)}
+                  className="bg-[#1D64D8] hover:bg-[#1554B8] text-white text-xs sm:text-sm font-semibold px-6 py-3 rounded-full transition-all shadow-sm hover:shadow-md flex items-center gap-2 cursor-pointer transform hover:-translate-y-0.5"
+                >
+                  <Calendar className="w-4 h-4" />
+                  <span>Book Wellness Consultation</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </button>
+
+                <Link
+                  href="/services/wellness"
+                  className="bg-white hover:bg-slate-50 text-[#0A1938] border border-slate-200 text-xs sm:text-sm font-semibold px-6 py-3 rounded-full transition-all shadow-2xs hover:shadow-sm inline-flex items-center gap-1.5"
+                >
+                  <span>Learn More</span>
+                  <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
+                </Link>
+
+                <a
+                  href="https://wa.me/919813503420?text=Hello%20Jangra%20Diagnostics%2C%20I%20would%20like%20to%20know%20more%20about%20the%20Wellness%20Clinic."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-emerald-700 hover:text-emerald-800 px-3 py-2"
+                >
+                  <MessageCircle className="w-4 h-4 text-emerald-600" />
+                  <span>Chat on WhatsApp</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Right Column: Visual Frame */}
+            <div className="lg:col-span-5 relative">
+              <div className="relative mx-auto max-w-lg lg:max-w-none pr-3 pb-3 sm:pr-5 sm:pb-5">
+                {/* Soft Emerald-Sky Pastel Offset Layer */}
+                <div className="absolute bottom-0 right-0 w-[94%] h-[94%] bg-[#CBE6FF] rounded-[32px] sm:rounded-[36px] pointer-events-none" />
+
+                {/* Wellness Image Card */}
+                <div className="relative rounded-[28px] sm:rounded-[32px] overflow-hidden shadow-xl aspect-[4/3] bg-white border-2 border-white z-10">
+                  <img
+                    src="/enhanced/doctors.png"
+                    alt="Dr. Krishan Jangra and Dr. Neha Jangra at Doctor Consultation Desk in Jangra Diagnostics"
+                    className="w-full h-full object-cover"
+                  />
+                  {/* Floating Badges */}
+                  <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-full shadow-sm border border-slate-100 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                    <span className="text-[11px] font-bold text-[#0A1938]">Doctor Consultation &amp; Vitals</span>
+                  </div>
+
+                  <div className="absolute bottom-4 right-4 bg-[#0A1938]/90 backdrop-blur-md px-3.5 py-2 rounded-2xl shadow-lg border border-white/10 text-white max-w-[210px]">
+                    <div className="text-[10px] uppercase font-bold text-[#38BDF8] tracking-wider">Preventive Care</div>
+                    <div className="text-xs font-semibold mt-0.5 leading-snug">Personalized wellness for long-term health</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* ========================================================
+          MAX CARE HEALTH PACKAGES TEASER (Pamphlet Details & Offers)
+         ======================================================== */}
+      <HealthPackagesTeaser />
 
       {/* ========================================================
           3. ABOUT US SECTION (Ditto Match to User Reference Screenshot)
@@ -417,13 +734,27 @@ export default function HomePage() {
                 {/* Soft Pastel Blue Offset Layer matching reference screenshot */}
                 <div className="absolute bottom-0 right-0 w-[94%] h-[94%] bg-[#C6E0F9] rounded-[32px] sm:rounded-[36px] pointer-events-none" />
 
-                {/* Main Clinic Reception Image */}
+                {/* Main Clinic Entrance Image */}
                 <div className="relative rounded-[28px] sm:rounded-[32px] overflow-hidden shadow-lg aspect-[4/3] bg-white border-2 border-white z-10">
                   <img
-                    src="/clinic_reception.jpg"
-                    alt="Jangra Diagnostics Reception & Waiting Area"
+                    src="/enhanced/entrance.png"
+                    alt="Jangra Diagnostic Centre & Dental Clinic Grand Entrance on Sonipat Road Rohtak"
                     className="w-full h-full object-cover"
                   />
+                  {/* Floating Badges */}
+                  <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-full shadow-sm border border-slate-100 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#1D64D8]" />
+                    <span className="text-[11px] font-bold text-[#0A1938]">Centre Entrance • Sonipat Road</span>
+                  </div>
+                  <div className="absolute bottom-4 inset-x-4 bg-[#0A1938]/90 backdrop-blur-md px-3.5 py-2 rounded-2xl shadow-lg border border-white/10 text-white flex items-center justify-between">
+                    <div>
+                      <div className="text-[10px] uppercase font-bold text-[#38BDF8] tracking-wider">Established 2013</div>
+                      <div className="text-xs font-semibold mt-0.5">Opp. Gymkhana Club, Rohtak</div>
+                    </div>
+                    <span className="text-[10px] bg-emerald-500/20 text-emerald-300 font-semibold px-2.5 py-0.5 rounded-full border border-emerald-400/30">
+                      Ample Parking
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -566,6 +897,184 @@ export default function HomePage() {
       </section>
 
       {/* ========================================================
+          CAMPUS & ON-SITE FACILITIES SHOWCASE
+         ======================================================== */}
+      <section className="py-12 lg:py-16 bg-white border-t border-slate-100 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 gap-4">
+            <div>
+              <div className="text-xs sm:text-sm font-bold tracking-[0.2em] text-[#1D64D8] uppercase mb-2 flex items-center gap-2">
+                <span>CAMPUS &amp; INFRASTRUCTURE</span>
+                <span className="text-slate-300 font-normal">/</span>
+                <span>ON-SITE TOUR</span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-extrabold tracking-tight leading-[1.14]">
+                <span className="text-[#0A1938]">Modern Facilities </span>
+                <span className="text-[#1D64D8]">Designed for Patient Comfort</span>
+              </h2>
+            </div>
+
+            <Link
+              href="/gallery"
+              className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-[#1D64D8] hover:text-[#1554B8] group self-start md:self-end bg-[#EBF5FE] hover:bg-sky-100 px-5 py-2.5 rounded-full transition-all"
+            >
+              <span>Explore Complete Photo Gallery</span>
+              <ChevronRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+            
+            {/* 1. Grand Entrance & Campus */}
+            <div className="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-[0_4px_20px_rgba(29,100,216,0.04)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col">
+              <div className="aspect-[16/11] relative overflow-hidden bg-slate-100">
+                <img
+                  src="/enhanced/entrance.png"
+                  alt="Jangra Diagnostic Centre & Dental Clinic Grand Entrance on Sonipat Road Rohtak"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-3.5 left-3.5 bg-[#0A1938]/85 text-white text-[11px] font-medium px-3 py-1 rounded-full backdrop-blur-sm">
+                  Centre Frontage &amp; Gate
+                </div>
+              </div>
+              <div className="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 className="font-bold text-base text-[#0A1938] mb-1.5 group-hover:text-[#1D64D8] transition-colors">
+                    Main Road Entrance &amp; Parking
+                  </h4>
+                  <p className="text-xs text-slate-500 leading-relaxed font-normal">
+                    Located opposite Gymkhana Club on Sonipat Road with dedicated patient parking and wheelchair-friendly approach.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 2. Computerized CR Radiography Console */}
+            <div className="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-[0_4px_20px_rgba(29,100,216,0.04)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col">
+              <div className="aspect-[16/11] relative overflow-hidden bg-slate-100">
+                <img
+                  src="/enhanced/operator.png"
+                  alt="Radiography technician at Computerized CR Workstation"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-3.5 left-3.5 bg-[#0A1938]/85 text-white text-[11px] font-medium px-3 py-1 rounded-full backdrop-blur-sm">
+                  Digital X-Ray Console
+                </div>
+              </div>
+              <div className="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 className="font-bold text-base text-[#0A1938] mb-1.5 group-hover:text-[#1D64D8] transition-colors">
+                    Computerized CR Workstation
+                  </h4>
+                  <p className="text-xs text-slate-500 leading-relaxed font-normal">
+                    Real-time digital processing ensuring instantaneous doctor review and ALARA low-radiation safety protocols.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 3. Dental Clinic Nursing & Billing Counter */}
+            <div className="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-[0_4px_20px_rgba(29,100,216,0.04)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col">
+              <div className="aspect-[16/11] relative overflow-hidden bg-slate-100">
+                <img
+                  src="/enhanced/nursingStation.png"
+                  alt="Jangra Dental Clinic Front Desk & Nursing Station"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-3.5 left-3.5 bg-[#0A1938]/85 text-white text-[11px] font-medium px-3 py-1 rounded-full backdrop-blur-sm">
+                  Dental Reception Station
+                </div>
+              </div>
+              <div className="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 className="font-bold text-base text-[#0A1938] mb-1.5 group-hover:text-[#1D64D8] transition-colors">
+                    Dental Care Front Desk
+                  </h4>
+                  <p className="text-xs text-slate-500 leading-relaxed font-normal">
+                    Dedicated dental reception counter providing seamless appointment booking and patient oral hygiene counseling.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 4. Pathology Sample Collection Desk */}
+            <div className="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-[0_4px_20px_rgba(29,100,216,0.04)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col">
+              <div className="aspect-[16/11] relative overflow-hidden bg-slate-100">
+                <img
+                  src="/enhanced/lab.png"
+                  alt="Pathology laboratory sample collection station and BD supplies"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-3.5 left-3.5 bg-[#0A1938]/85 text-white text-[11px] font-medium px-3 py-1 rounded-full backdrop-blur-sm">
+                  Pathology Collection Desk
+                </div>
+              </div>
+              <div className="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 className="font-bold text-base text-[#0A1938] mb-1.5 group-hover:text-[#1D64D8] transition-colors">
+                    Clinical Sample Collection
+                  </h4>
+                  <p className="text-xs text-slate-500 leading-relaxed font-normal">
+                    Equipped with sterile BD Vacutainer supplies, barcoded collection tubes, and certified Max Lab pathology workflow.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 5. High-Resolution Ultrasound Suite */}
+            <div className="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-[0_4px_20px_rgba(29,100,216,0.04)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col">
+              <div className="aspect-[16/11] relative overflow-hidden bg-slate-100">
+                <img
+                  src="/enhanced/ultrasound.png"
+                  alt="Dr. Krishan Jangra conducting an ultrasound examination"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-3.5 left-3.5 bg-[#0A1938]/85 text-white text-[11px] font-medium px-3 py-1 rounded-full backdrop-blur-sm">
+                  Ultrasound Suite
+                </div>
+              </div>
+              <div className="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 className="font-bold text-base text-[#0A1938] mb-1.5 group-hover:text-[#1D64D8] transition-colors">
+                    Ultrasound &amp; Colour Doppler Suite
+                  </h4>
+                  <p className="text-xs text-slate-500 leading-relaxed font-normal">
+                    Advanced sonography room with high-resolution diagnostic probes, patient examination couch, and senior radiologist reporting.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 6. Advanced Dental Surgery Operatory */}
+            <div className="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-[0_4px_20px_rgba(29,100,216,0.04)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col">
+              <div className="aspect-[16/11] relative overflow-hidden bg-slate-100">
+                <img
+                  src="/enhanced/dentalDoctor.png"
+                  alt="Dr. Neha Jangra and assistant performing dental surgery"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-3.5 left-3.5 bg-[#0A1938]/85 text-white text-[11px] font-medium px-3 py-1 rounded-full backdrop-blur-sm">
+                  Dental Surgery Operatory
+                </div>
+              </div>
+              <div className="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 className="font-bold text-base text-[#0A1938] mb-1.5 group-hover:text-[#1D64D8] transition-colors">
+                    Sterilised Operatory Suite
+                  </h4>
+                  <p className="text-xs text-slate-500 leading-relaxed font-normal">
+                    Equipped with ergonomic patient chair, surgical loupes, LED lighting, digital RVG imaging, and autoclaved instruments.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* ========================================================
           5. PATIENT TESTIMONIALS SECTION (Ditto Match to User Reference Screenshot)
          ======================================================== */}
       <section className="py-10 sm:py-12 lg:py-14 bg-white overflow-hidden">
@@ -637,8 +1146,12 @@ export default function HomePage() {
             
             {/* Doctor 1: Dr. Krishan Jangra */}
             <div className="bg-white rounded-[24px] sm:rounded-[28px] p-6 sm:p-7 border border-slate-100 shadow-[0_6px_25px_rgba(29,100,216,0.04)] hover:shadow-md transition-all flex flex-col sm:flex-row gap-5 items-center sm:items-start text-center sm:text-left group">
-              <div className="w-16 h-16 sm:w-18 sm:h-18 rounded-2xl bg-[#EBF5FE] border border-sky-100 overflow-hidden shrink-0 shadow-sm flex items-center justify-center text-[#1D64D8]">
-                <Stethoscope className="w-8 h-8" />
+              <div className="w-18 h-18 sm:w-20 sm:h-20 rounded-2xl overflow-hidden shrink-0 shadow-md border-2 border-sky-100 bg-slate-100">
+                <img
+                  src="/newPictures/WhatsApp Image 2026-10-14 at 1.37.14 PM.jpeg"
+                  alt="Dr. Krishan Jangra — Consultant Radiologist"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="space-y-1.5 flex-1">
                 <span className="inline-block text-[10px] font-semibold text-[#1D64D8] bg-[#EBF5FE] border border-sky-100 px-2.5 py-0.5 rounded-full uppercase tracking-wider">
@@ -654,8 +1167,12 @@ export default function HomePage() {
 
             {/* Doctor 2: Dr. Neha Jangra */}
             <div className="bg-white rounded-[24px] sm:rounded-[28px] p-6 sm:p-7 border border-slate-100 shadow-[0_6px_25px_rgba(29,100,216,0.04)] hover:shadow-md transition-all flex flex-col sm:flex-row gap-5 items-center sm:items-start text-center sm:text-left group">
-              <div className="w-16 h-16 sm:w-18 sm:h-18 rounded-2xl bg-[#F0FDF4] border border-emerald-100 overflow-hidden shrink-0 shadow-sm flex items-center justify-center text-emerald-600">
-                <Sparkles className="w-8 h-8" />
+              <div className="w-18 h-18 sm:w-20 sm:h-20 rounded-2xl overflow-hidden shrink-0 shadow-md border-2 border-emerald-100 bg-slate-100">
+                <img
+                  src="/newPictures/WhatsApp Image 2026-10-14 at 1.37.04 PM.jpeg"
+                  alt="Dr. Neha Jangra — Lead Dental Surgeon"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="space-y-1.5 flex-1">
                 <span className="inline-block text-[10px] font-semibold text-emerald-700 bg-emerald-50 border border-emerald-100 px-2.5 py-0.5 rounded-full uppercase tracking-wider">
@@ -713,15 +1230,18 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* Right Lab Technician Image matching reference screenshot */}
-              <div className="md:col-span-5 h-56 md:h-full min-h-[220px] md:min-h-[300px] relative overflow-hidden">
+              {/* Right Healthcare Team Image */}
+              <div className="md:col-span-5 h-64 md:h-full min-h-[240px] md:min-h-[320px] relative overflow-hidden bg-slate-900">
                 <img
-                  src="/lab_technician.jpg"
-                  alt="Pathology lab technician preparing blood sample"
-                  className="w-full h-full object-cover"
+                  src="/newPictures/WhatsApp Image 2026-10-14 at 1.37.20 PM.jpeg"
+                  alt="Medical leadership and healthcare team at Jangra Diagnostic Centre & Dental Care Rohtak"
+                  className="w-full h-full object-cover object-top"
                 />
                 {/* Soft gradient blend into navy background */}
-                <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#0A1938] to-transparent pointer-events-none hidden md:block" />
+                <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-[#0A1938] to-transparent pointer-events-none hidden md:block" />
+                <div className="absolute bottom-2.5 right-3 bg-black/60 backdrop-blur-sm text-[10px] text-sky-200 px-2.5 py-1 rounded-full font-medium">
+                  Compassionate Patient Care
+                </div>
               </div>
 
             </div>
@@ -808,6 +1328,7 @@ export default function HomePage() {
                       <option value="Digital X-Ray">Digital X-Ray &amp; OPG</option>
                       <option value="Pathology Lab">Pathology Lab (MAX LAB)</option>
                       <option value="Dental Care">Dental Care Clinic</option>
+                      <option value="Wellness Clinic">Wellness &amp; Preventive Clinic</option>
                       <option value="Guided Procedures">Guided Procedures</option>
                       <option value="Free General OPD">Free General OPD</option>
                     </select>

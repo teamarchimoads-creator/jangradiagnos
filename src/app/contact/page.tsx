@@ -213,6 +213,7 @@ export default function ContactPage() {
                       <option value="Pathology Blood/Urine Test">Pathology Blood/Urine Test</option>
                       <option value="Free Home Sample Collection">Free Home Sample Collection</option>
                       <option value="Dental Clinic Visit">Dental Clinic Visit (Dr. Neha Jangra)</option>
+                      <option value="Wellness Clinic Consultation">Wellness &amp; Preventive Health Clinic</option>
                       <option value="Guided Procedure">Guided Procedure (FNAC/Biopsy)</option>
                     </select>
                   </div>

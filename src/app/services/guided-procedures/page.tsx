@@ -63,7 +63,7 @@ export default function GuidedProceduresPage() {
             <div className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-100 shadow-[0_4px_20px_rgba(10,25,56,0.04)]">
               <div className="aspect-16/9 rounded-xl overflow-hidden mb-5 bg-slate-100 relative">
                 <img
-                  src="/services/ultrasound.jpg"
+                  src="/enhanced/ultrasound.png"
                   alt="Clinical Intervention and Ultrasound Guidance at Jangra Diagnostics"
                   className="w-full h-full object-cover"
                 />
