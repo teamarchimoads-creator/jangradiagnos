@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Jangra Diagnostics",
     images: [
       {
-        url: "/gallery/logo.png",
+        url: "/logo.png",
         width: 1200,
         height: 400,
         alt: "Jangra Diagnostics Logo",
@@ -116,7 +116,7 @@ export default function RootLayout({
               <div className="space-y-3.5">
                 <Link href="/" className="inline-flex items-center group py-1">
                   <img
-                    src="/gallery/logo.png"
+                    src="/logo.png"
                     alt="Jangra Diagnostic Centre"
                     className="h-11 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105"
                   />

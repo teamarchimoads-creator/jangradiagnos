@@ -51,7 +51,7 @@ export default function Preloader() {
         {/* Pure Transparent Logo Emblem with 3D rotation and reveal */}
         <div className="relative animate-logo-reveal z-10 flex items-center justify-center p-3">
           <Image
-            src="/gallery/logo.png"
+            src="/logo.png"
             alt="Jangra Diagnostics Loading..."
             width={240}
             height={160}
