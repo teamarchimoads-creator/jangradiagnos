@@ -30,7 +30,7 @@ export default function Navbar() {
           {/* Logo Area: Clean White Background with Authentic Logo */}
           <Link href="/" className="flex items-center shrink-0 group py-1">
             <img
-              src="/logo.png"
+              src="/gallery/logo.png"
               alt="Jangra Diagnostic Centre"
               className="h-11 sm:h-12 lg:h-14 w-auto object-contain transition-transform group-hover:scale-105"
             />
@@ -98,7 +98,7 @@ export default function Navbar() {
           <div className="w-[85%] max-w-sm bg-white text-slate-800 h-full shadow-2xl flex flex-col p-6 overflow-y-auto animate-in slide-in-from-right duration-300">
             <div className="flex justify-between items-center pb-4 border-b border-slate-100">
               <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center py-1">
-                <img src="/logo.png" alt="Jangra Diagnostic Centre" className="h-9 w-auto object-contain" />
+                <img src="/gallery/logo.png" alt="Jangra Diagnostic Centre" className="h-9 w-auto object-contain" />
               </Link>
               <button
                 type="button"

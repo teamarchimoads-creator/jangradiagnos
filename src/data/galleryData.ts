@@ -370,7 +370,7 @@ export const duplicateAuditLog = {
   exactDuplicatesIdentified: [
     {
       description: "Centre Logo File (Same 1421x1107 PNG, 1.25 MB)",
-      retainedFile: "/logo.png",
+      retainedFile: "/gallery/logo.png",
       duplicatePaths: ["/logo.png", "/logoForNav.png", "/logoNew.png"]
     },
     {
