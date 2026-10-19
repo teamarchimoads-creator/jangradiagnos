@@ -281,7 +281,7 @@ export const galleryItems: GalleryItem[] = [
     src: "/enhanced/entrance.png",
     title: "Main Road Entrance Gate & Campus",
     category: "Centre & Facilities",
-    caption: "Exterior entrance gate on Sonipat Road opposite Gymkhana Club with Hindi and English facility signage and patient parking.",
+    caption: "Exterior entrance gate on Sonipat Road near India's First Elevated Railway Track with Hindi and English facility signage and patient parking.",
     alt: "Jangra Diagnostic Centre & Dental Clinic Grand Entrance Gate on Sonipat Road Rohtak",
     dimensions: "1537x1023",
     isCurated: true
@@ -354,7 +354,7 @@ export const galleryItems: GalleryItem[] = [
     src: "/newPictures/WhatsApp Image 2026-10-14 at 1.37.19 PM.jpeg",
     title: "Green Tree-Lined Entrance Approach",
     category: "Centre & Facilities",
-    caption: "Quiet, peaceful entrance approach lined with lush green trees, situated safely off Sonipat Road near Railway Crossing, Rohtak.",
+    caption: "Quiet, peaceful entrance approach lined with lush green trees, situated safely off Sonipat Road near India's First Elevated Railway Track, Rohtak.",
     alt: "Tree-lined entrance driveway leading into Jangra Diagnostic Centre",
     dimensions: "1600x1064",
     isCurated: true,

@@ -26,7 +26,7 @@ const SiteSettingsSchema: Schema = new Schema(
     address: { type: String, default: '91-1/22K, Near India\'s First Elevated Railway Track, Sonipat Road, Rohtak, Haryana – 124001' },
     landmark: { type: String, default: 'Near India\'s First Elevated Railway Track, Sonipat Road' },
     openingHours: { type: String, default: 'Mon - Sat: 8:00 AM - 8:00 PM, Sun: 8:00 AM - 2:00 PM' },
-    mapLink: { type: String, default: 'https://maps.google.com/?q=Jangra+Diagnostics+Sonipat+Road+Rohtak' },
+    mapLink: { type: String, default: 'https://maps.app.goo.gl/qMRGY4v1UGqNN1ce8' },
     socialLinks: {
       facebook: { type: String },
       instagram: { type: String },

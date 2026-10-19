@@ -33,8 +33,8 @@ export default function ContactTicker() {
       type: "location",
       icon: MapPin,
       label: "Centre Location",
-      value: "Opp. Gymkhana Club, Sonipat Road, Rohtak",
-      href: "https://maps.google.com/?q=Jangra+Diagnostics+Rohtak",
+      value: "Near India's First Elevated Railway Track, Sonipat Road, Rohtak",
+      href: "https://maps.app.goo.gl/qMRGY4v1UGqNN1ce8",
       actionText: "Directions",
     },
     {

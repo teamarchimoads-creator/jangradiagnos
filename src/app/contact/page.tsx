@@ -98,22 +98,34 @@ export default function ContactPage() {
           {/* Contact Details */}
           <div className="lg:col-span-5 space-y-4">
             
-            <div className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-100 shadow-[0_4px_20px_rgba(10,25,56,0.04)] space-y-3">
-              <div className="w-10 h-10 bg-[#EBF5FE] text-[#1D64D8] rounded-xl flex items-center justify-center">
-                <MapPin className="w-5 h-5" />
+            <a 
+              href="https://www.google.com/maps/place/Jangra+Diagnostic+Center+and+Dental+Clinic/@28.8961098,76.6013612,17z/data=!4m6!3m5!1s0x390d850f4c953895:0xce385803859aa24f!8m2!3d28.8961051!4d76.6039361!16s%2Fg%2F11c604ltsj"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-100 shadow-[0_4px_20px_rgba(10,25,56,0.04)] space-y-3 block hover:border-sky-300 hover:shadow-md transition-all group"
+              title="Open clinic location on Google Maps"
+            >
+              <div className="flex items-center justify-between">
+                <div className="w-10 h-10 bg-[#EBF5FE] text-[#1D64D8] rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform">
+                  <MapPin className="w-5 h-5" />
+                </div>
+                <span className="text-xs font-semibold text-[#1D64D8] group-hover:underline flex items-center gap-1">
+                  Get Directions ↗
+                </span>
               </div>
               <div>
-                <h3 className="font-bold text-lg text-[#0A1938] mb-1.5">Centre Address</h3>
+                <h3 className="font-bold text-lg text-[#0A1938] mb-1.5 group-hover:text-[#1D64D8] transition-colors">Centre Address</h3>
                 <p className="text-slate-500 text-xs sm:text-sm leading-relaxed">
                   <span className="font-medium text-slate-800">Jangra Diagnostic &amp; Dental Care Centre</span><br />
                   91-1/22K, Near India&apos;s First Elevated Railway Track,<br />
                   Sonipat Road, Rohtak, Haryana – 124001
                 </p>
-                <div className="mt-3 text-[11px] bg-[#F5F9FD] p-2.5 rounded-xl text-slate-600 border border-sky-100/60">
-                  ✓ Convenient parking facilities available on premises
+                <div className="mt-3 text-[11px] bg-[#F5F9FD] p-2.5 rounded-xl text-slate-600 border border-sky-100/60 flex items-center justify-between">
+                  <span>✓ Convenient parking facilities available on premises</span>
+                  <span className="text-[#1D64D8] font-bold">Open Maps →</span>
                 </div>
               </div>
-            </div>
+            </a>
 
             <div className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-100 shadow-[0_4px_20px_rgba(10,25,56,0.04)] space-y-3">
               <div className="w-10 h-10 bg-[#EBF5FE] text-[#1D64D8] rounded-xl flex items-center justify-center">
@@ -256,17 +268,17 @@ export default function ContactPage() {
               <p className="text-slate-500 text-xs mt-0.5">91-1/22K, Near India&apos;s First Elevated Railway Track, Sonipat Road, Rohtak</p>
             </div>
             <a
-              href="https://maps.google.com/?q=Sonipat+Road+Rohtak+Haryana"
+              href="https://www.google.com/maps/place/Jangra+Diagnostic+Center+and+Dental+Clinic/@28.8961098,76.6013612,17z/data=!4m6!3m5!1s0x390d850f4c953895:0xce385803859aa24f!8m2!3d28.8961051!4d76.6039361!16s%2Fg%2F11c604ltsj"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs font-medium text-[#1D64D8] hover:underline"
+              className="text-xs font-semibold text-[#1D64D8] hover:underline flex items-center gap-1"
             >
               Open in Google Maps App →
             </a>
           </div>
           <div className="h-96 w-full relative">
             <iframe
-              src="https://www.google.com/maps?q=Sonipat+Road,+Rohtak,+Haryana+124001&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3493.578687729015!2d76.6013612!3d28.8961051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d850f4c953895%3A0xce385803859aa24f!2sJangra%20Diagnostic%20Center%20and%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1729324000000!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}

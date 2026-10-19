@@ -349,7 +349,7 @@ export const labDetails = {
   regionNotice: "Price applicable only for Haryana.",
   homeCollectionPhone: "7988241350",
   whatsapp: "7982100200",
-  address: "H.no. 91-1/22k, Jangra Diagnostic Centre, Sonipat Road, Near Railway Crossing, Rohtak, Haryana - 124001",
+  address: "91-1/22K, Near India's First Elevated Railway Track, Sonipat Road, Rohtak, Haryana – 124001",
   website: "www.maxlab.co.in",
   footprints: {
     labs: "45+ Test processing labs",

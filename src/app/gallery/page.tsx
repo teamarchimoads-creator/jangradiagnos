@@ -33,9 +33,15 @@ export default function GalleryPage() {
             <span className="inline-flex items-center gap-1.5 bg-white px-3 py-1 rounded-full border border-slate-200/80 shadow-2xs">
               <ShieldCheck className="w-3.5 h-3.5 text-[#1D64D8]" /> 100% Real Facility Photos
             </span>
-            <span className="inline-flex items-center gap-1.5 bg-white px-3 py-1 rounded-full border border-slate-200/80 shadow-2xs">
-              <MapPin className="w-3.5 h-3.5 text-[#1D64D8]" /> Sonipat Road, Near Railway Crossing, Rohtak
-            </span>
+            <a 
+              href="https://maps.app.goo.gl/qMRGY4v1UGqNN1ce8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 bg-white px-3 py-1 rounded-full border border-slate-200/80 shadow-2xs hover:text-[#1D64D8] hover:border-sky-300 transition-colors"
+              title="Open clinic location on Google Maps"
+            >
+              <MapPin className="w-3.5 h-3.5 text-[#1D64D8]" /> Sonipat Road, Near India&apos;s First Elevated Railway Track, Rohtak ↗
+            </a>
           </div>
         </div>
       </div>

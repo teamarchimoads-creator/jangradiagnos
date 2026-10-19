@@ -94,7 +94,7 @@ export default function HealthPackagesSection() {
               </a>
             </div>
             <div className="text-[11px] text-sky-300/80 text-center">
-              Centre: Sonipat Road, Near Railway Crossing, Rohtak
+              Centre: Sonipat Road, Near India&apos;s First Elevated Railway Track, Rohtak
             </div>
           </div>
         </div>
@@ -497,9 +497,15 @@ export default function HealthPackagesSection() {
         <div className="pt-4 border-t border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-xs text-slate-300">
           <div className="flex items-start gap-2 max-w-xl">
             <MapPin className="w-4 h-4 text-sky-400 shrink-0 mt-0.5" />
-            <span>
-              <strong>Jangra Diagnostic Centre (Max Lab Partner):</strong> {labDetails.address}
-            </span>
+            <a 
+              href="https://maps.app.goo.gl/qMRGY4v1UGqNN1ce8" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors group"
+              title="Open location in Google Maps"
+            >
+              <strong>Jangra Diagnostic Centre (Max Lab Partner):</strong> <span className="group-hover:underline">{labDetails.address} ↗</span>
+            </a>
           </div>
 
           <div className="flex flex-wrap items-center gap-4 shrink-0">

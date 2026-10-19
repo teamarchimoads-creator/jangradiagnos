@@ -75,6 +75,17 @@ export default function RootLayout({
               <a href="mailto:drkkj.2k@gmail.com" className="hover:text-blue-600 transition-colors">
                 drkkj.2k@gmail.com
               </a>
+              <span className="text-sky-300 font-bold">•</span>
+              <a 
+                href="https://maps.app.goo.gl/qMRGY4v1UGqNN1ce8" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-blue-600 transition-colors flex items-center gap-1 font-semibold text-[#1D64D8]"
+                title="View clinic on Google Maps"
+              >
+                <MapPin className="w-3.5 h-3.5" />
+                <span>Sonipat Road, Rohtak</span>
+              </a>
             </div>
 
             <div className="flex items-center gap-2">
@@ -89,10 +100,21 @@ export default function RootLayout({
             <a href="tel:+919813503419" className="flex items-center gap-1 text-[#0A1938] font-bold hover:text-[#1D64D8]">
               <span className="text-blue-600">📞</span> +91 9813503419
             </a>
-            <a href="tel:+919813503420" className="text-[#1D64D8] font-bold flex items-center gap-0.5">
-              <span>Home Sample Collection</span>
-              <span className="text-[10px]">→</span>
-            </a>
+            <div className="flex items-center gap-2.5">
+              <a 
+                href="https://maps.app.goo.gl/qMRGY4v1UGqNN1ce8" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-[#1D64D8] font-bold flex items-center gap-0.5 hover:underline"
+              >
+                <span>📍 Directions</span>
+              </a>
+              <span className="text-slate-300">•</span>
+              <a href="tel:+919813503420" className="text-[#1D64D8] font-bold flex items-center gap-0.5">
+                <span>Sample Pickup</span>
+                <span className="text-[10px]">→</span>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -158,6 +180,16 @@ export default function RootLayout({
                   >
                     <Mail className="w-4 h-4" />
                   </a>
+                  <a
+                    href="https://maps.app.goo.gl/qMRGY4v1UGqNN1ce8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open Jangra Diagnostics on Google Maps"
+                    className="w-8 h-8 rounded-full bg-white border border-sky-200/80 text-[#EA4335] hover:bg-[#EA4335] hover:text-white flex items-center justify-center transition-colors shadow-2xs"
+                    title="Open on Google Maps"
+                  >
+                    <MapPin className="w-4 h-4" />
+                  </a>
                 </div>
               </div>
 
@@ -219,13 +251,19 @@ export default function RootLayout({
                     </svg>
                     <a href="https://www.facebook.com/jangradc/" target="_blank" rel="noopener noreferrer" className="hover:text-[#1877F2] transition-colors">facebook.com/jangradc</a>
                   </div>
-                  <div className="flex items-start gap-2 pt-1 leading-relaxed max-w-sm">
-                    <MapPin className="w-3.5 h-3.5 text-[#1D64D8] shrink-0 mt-0.5" />
-                    <span>
+                  <a
+                    href="https://maps.app.goo.gl/qMRGY4v1UGqNN1ce8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-start gap-2 pt-1 leading-relaxed max-w-sm hover:text-[#1D64D8] transition-colors group"
+                    title="Open address in Google Maps"
+                  >
+                    <MapPin className="w-3.5 h-3.5 text-[#1D64D8] shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
+                    <span className="group-hover:underline">
                       91-1/22K, Near India’s First Elevated Railway Track,<br />
                       Sonipat Road, Rohtak, Haryana – 124001
                     </span>
-                  </div>
+                  </a>
                 </div>
               </div>
 

@@ -251,9 +251,16 @@ export default function HomePage() {
                   FACILITIES OF DIAGNOSTIC CENTRE :
                 </h2>
               </div>
-              <span className="text-[11px] font-semibold text-slate-500 bg-slate-50 px-3 py-1 rounded-full border border-slate-100 self-start sm:self-auto">
-                Opp. Gymkhana Club, Sonipat Road
-              </span>
+              <a 
+                href="https://maps.app.goo.gl/qMRGY4v1UGqNN1ce8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[11px] font-semibold text-slate-500 bg-slate-50 px-3 py-1 rounded-full border border-slate-100 self-start sm:self-auto hover:text-[#1D64D8] hover:border-sky-300 transition-colors inline-flex items-center gap-1"
+                title="View clinic on Google Maps"
+              >
+                <span>Near Elevated Railway Track, Sonipat Road</span>
+                <span className="text-sky-500 font-bold">↗</span>
+              </a>
             </div>
 
             {/* 6 Facilities with Exact Colors & Circular Icons matching brochure in 3-column / 2-column grid */}
@@ -749,7 +756,16 @@ export default function HomePage() {
                   <div className="absolute bottom-4 inset-x-4 bg-[#0A1938]/90 backdrop-blur-md px-3.5 py-2 rounded-2xl shadow-lg border border-white/10 text-white flex items-center justify-between">
                     <div>
                       <div className="text-[10px] uppercase font-bold text-[#38BDF8] tracking-wider">Established 2013</div>
-                      <div className="text-xs font-semibold mt-0.5">Opp. Gymkhana Club, Rohtak</div>
+                      <a 
+                        href="https://maps.app.goo.gl/qMRGY4v1UGqNN1ce8" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-xs font-semibold mt-0.5 hover:text-[#38BDF8] transition-colors flex items-center gap-1"
+                        title="Open on Google Maps"
+                      >
+                        <span>Near Elevated Railway Track, Rohtak</span>
+                        <span className="text-[10px]">↗</span>
+                      </a>
                     </div>
                     <span className="text-[10px] bg-emerald-500/20 text-emerald-300 font-semibold px-2.5 py-0.5 rounded-full border border-emerald-400/30">
                       Ample Parking
@@ -944,7 +960,7 @@ export default function HomePage() {
                     Main Road Entrance &amp; Parking
                   </h4>
                   <p className="text-xs text-slate-500 leading-relaxed font-normal">
-                    Located opposite Gymkhana Club on Sonipat Road with dedicated patient parking and wheelchair-friendly approach.
+                    Located near India&apos;s First Elevated Railway Track on Sonipat Road with dedicated patient parking and wheelchair-friendly approach.
                   </p>
                 </div>
               </div>
