@@ -298,12 +298,12 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "centre-helpdesk-reception",
-    src: "/enhanced/helpdesk.png",
+    src: "https://res.cloudinary.com/puvsvkoq/image/upload/v1792393784/f17173fb-db52-426a-9660-af288d60340d.png",
     title: "Main Help Desk & Registration Counter",
     category: "Centre & Facilities",
     caption: "Front-office helpdesk team managing fast-track patient registration, test inquiries, and report dispatch.",
     alt: "Front view of the Help Desk counter with registration staff at Jangra Diagnostics",
-    dimensions: "1537x1023",
+    dimensions: "1539x1022",
     isCurated: true
   },
   {
