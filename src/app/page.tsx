@@ -124,7 +124,7 @@ export default function HomePage() {
 
               {/* Main Headline */}
               <h1 className="text-[28px] xs:text-3xl sm:text-4xl md:text-5xl lg:text-[50px] xl:text-[54px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.08]">
-                <span className="text-[#0A1938] block"> Diagnostics</span>
+                <span className="text-[#0A1938] block">Advanced Diagnostics</span>
                 <span className="text-[#1D64D8] block">for a Healthier Tomorrow</span>
               </h1>
 
