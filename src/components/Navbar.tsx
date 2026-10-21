@@ -27,17 +27,25 @@ export default function Navbar() {
       <header className="bg-white/95 backdrop-blur-md border-b border-slate-100 sticky top-0 z-40 transition-all shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-4">
 
-          {/* Logo Area: Clean White Background with Authentic Logo */}
-          <Link href="/" className="flex items-center shrink-0 group py-1">
+          {/* Logo Area: Clean White Background with Authentic Logo & Brand Name */}
+          <Link href="/" className="flex items-center gap-2.5 sm:gap-3 shrink-0 group py-1">
             <img
               src="/gallery/logo.png"
               alt="Jangra Diagnostic Centre"
-              className="h-11 sm:h-12 lg:h-14 w-auto object-contain transition-transform group-hover:scale-105"
+              className="h-10 sm:h-11 lg:h-13 w-auto object-contain transition-transform group-hover:scale-105"
             />
+            <div className="flex flex-col">
+              <span className="text-sm sm:text-base lg:text-lg font-bold text-[#0A1938] leading-tight tracking-tight group-hover:text-[#1D64D8] transition-colors">
+                Jangra Diagnostics
+              </span>
+              <span className="text-[10px] sm:text-[11px] font-semibold text-slate-500 uppercase tracking-wider leading-tight">
+                Diagnostic &amp; Dental Care
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+          <nav className="hidden lg:flex items-center space-x-5 xl:space-x-7">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
 
@@ -97,8 +105,16 @@ export default function Navbar() {
         <div className="lg:hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex justify-end">
           <div className="w-[85%] max-w-sm bg-white text-slate-800 h-full shadow-2xl flex flex-col p-6 overflow-y-auto animate-in slide-in-from-right duration-300">
             <div className="flex justify-between items-center pb-4 border-b border-slate-100">
-              <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center py-1">
+              <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2.5 py-1">
                 <img src="/gallery/logo.png" alt="Jangra Diagnostic Centre" className="h-9 w-auto object-contain" />
+                <div className="flex flex-col">
+                  <span className="text-sm font-bold text-[#0A1938] leading-tight">
+                    Jangra Diagnostics
+                  </span>
+                  <span className="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">
+                    Diagnostic &amp; Dental Care
+                  </span>
+                </div>
               </Link>
               <button
                 type="button"

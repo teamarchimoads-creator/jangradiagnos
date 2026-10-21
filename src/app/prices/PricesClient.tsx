@@ -58,7 +58,7 @@ function PricesTable({ testPrices }: { testPrices: { name: string; price: number
                 </td>
                 <td className="py-3.5 px-5 sm:px-6 text-right">
                   <a
-                    href={`https://wa.me/917988241350?text=${encodeURIComponent(
+                    href={`https://wa.me/919813503420?text=${encodeURIComponent(
                       `Hello Jangra Diagnostics, I want to enquire about the price and appointment for: ${test.name}`
                     )}`}
                     target="_blank"

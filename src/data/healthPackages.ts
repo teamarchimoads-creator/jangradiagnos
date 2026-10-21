@@ -347,7 +347,7 @@ export const labDetails = {
   organization: "Max Healthcare Institute Limited",
   reportType: "Free SMART Report by MAX Hospitals",
   regionNotice: "Price applicable only for Haryana.",
-  homeCollectionPhone: "7988241350",
+  homeCollectionPhone: "9813503420",
   whatsapp: "7982100200",
   address: "91-1/22K, Near India's First Elevated Railway Track, Sonipat Road, Rohtak, Haryana – 124001",
   website: "www.maxlab.co.in",

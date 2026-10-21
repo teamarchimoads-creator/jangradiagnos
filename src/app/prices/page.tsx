@@ -55,7 +55,7 @@ export default function PricesPage() {
           </div>
 
           <div className="text-center text-xs text-slate-400">
-            <p>* For test availability, preparation instructions, or home sample collection, call <strong>7988241350</strong> or chat on WhatsApp.</p>
+            <p>* For test availability, preparation instructions, or home sample collection, call <strong>9813503420</strong> or chat on WhatsApp.</p>
           </div>
         </div>
       </div>
