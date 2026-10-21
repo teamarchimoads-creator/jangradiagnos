@@ -3,9 +3,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { 
-  ArrowRight, Calendar, Phone, MessageCircle, 
-  MapPin, CheckCircle2, ShieldCheck, HeartPulse, Sparkles, User, 
+import {
+  ArrowRight, Calendar, Phone, MessageCircle,
+  MapPin, CheckCircle2, ShieldCheck, HeartPulse, Sparkles, User,
   Mail, ChevronRight, FileText, ChevronDown, Check, Loader2,
   Stethoscope, Clock, Users, Play, Award, ChevronLeft, ChevronRight as ChevronRightIcon,
   Activity
@@ -14,8 +14,8 @@ import { motion } from "framer-motion";
 import BookingModal from "@/components/BookingModal";
 import WhatsAppModal from "@/components/WhatsAppModal";
 import CallbackModal from "@/components/CallbackModal";
-import { 
-  CTScanIcon, MRIIcon, XRayIcon, UltrasoundIcon, PathologyIcon, DentalCareIcon 
+import {
+  CTScanIcon, MRIIcon, XRayIcon, UltrasoundIcon, PathologyIcon, DentalCareIcon
 } from "@/components/ServiceIcons";
 import HealthPackagesTeaser from "@/components/HealthPackagesTeaser";
 
@@ -107,10 +107,10 @@ export default function HomePage() {
          ======================================================== */}
       <section className="relative w-full bg-gradient-to-b from-white via-[#FAFDFE] to-white text-slate-900 overflow-hidden pt-5 pb-8 sm:pt-8 sm:pb-12 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6 sm:space-y-8">
-          
+
           {/* Top Row: Left Headline & CTAs | Right Real Team Image */}
           <div className="grid lg:grid-cols-12 gap-6 lg:gap-10 items-center">
-            
+
             {/* Left Column: Heading & CTAs */}
             <div className="lg:col-span-6 space-y-3 sm:space-y-4">
               {/* Eyebrow */}
@@ -124,7 +124,7 @@ export default function HomePage() {
 
               {/* Main Headline */}
               <h1 className="text-[28px] xs:text-3xl sm:text-4xl md:text-5xl lg:text-[50px] xl:text-[54px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.08]">
-                <span className="text-[#0A1938] block">Advanced Diagnostics</span>
+                <span className="text-[#0A1938] block"> Diagnostics</span>
                 <span className="text-[#1D64D8] block">for a Healthier Tomorrow</span>
               </h1>
 
@@ -240,7 +240,7 @@ export default function HomePage() {
           <div className="bg-white rounded-[28px] sm:rounded-[32px] p-5 sm:p-7 border border-slate-100 shadow-[0_12px_45px_rgba(29,100,216,0.06)] relative overflow-hidden">
             {/* Soft top gradient accent curve matching brochure top blue wave */}
             <div className="absolute top-0 inset-x-0 h-2 bg-gradient-to-r from-sky-400 via-[#1D64D8] to-sky-400" />
-            
+
             {/* Header matching brochure */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 sm:mb-5 border-b border-slate-100 pb-3 gap-2">
               <div>
@@ -251,7 +251,7 @@ export default function HomePage() {
                   FACILITIES OF DIAGNOSTIC CENTRE :
                 </h2>
               </div>
-              <a 
+              <a
                 href="https://maps.app.goo.gl/qMRGY4v1UGqNN1ce8"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -408,7 +408,7 @@ export default function HomePage() {
          ======================================================== */}
       <section className="py-12 lg:py-16 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           {/* Section Header */}
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 gap-4">
             <div>
@@ -432,7 +432,7 @@ export default function HomePage() {
 
           {/* 2x3 Grid with high-res service images */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-            
+
             {/* Card 1: Ultrasound */}
             <Link
               href="/services/ultrasound"
@@ -592,7 +592,7 @@ export default function HomePage() {
       <section id="wellness-clinic" className="py-12 lg:py-16 bg-[#F8FAFD] border-t border-slate-100 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            
+
             {/* Left Column: Heading, Narrative & 4 Pillars */}
             <div className="lg:col-span-7 space-y-6">
               <div>
@@ -733,11 +733,11 @@ export default function HomePage() {
       <section className="py-12 lg:py-16 bg-[#F5F9FD] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            
+
             {/* Left: Reception Image with Soft Pastel Blue Offset Backdrop */}
             <div className="lg:col-span-6 relative">
               <div className="relative mx-auto max-w-lg lg:max-w-none pr-3 pb-3 sm:pr-5 sm:pb-5">
-                
+
                 {/* Soft Pastel Blue Offset Layer matching reference screenshot */}
                 <div className="absolute bottom-0 right-0 w-[94%] h-[94%] bg-[#C6E0F9] rounded-[32px] sm:rounded-[36px] pointer-events-none" />
 
@@ -756,10 +756,10 @@ export default function HomePage() {
                   <div className="absolute bottom-4 inset-x-4 bg-[#0A1938]/90 backdrop-blur-md px-3.5 py-2 rounded-2xl shadow-lg border border-white/10 text-white flex items-center justify-between">
                     <div>
                       <div className="text-[10px] uppercase font-bold text-[#38BDF8] tracking-wider">Established 2013</div>
-                      <a 
-                        href="https://maps.app.goo.gl/qMRGY4v1UGqNN1ce8" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
+                      <a
+                        href="https://maps.app.goo.gl/qMRGY4v1UGqNN1ce8"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-xs font-semibold mt-0.5 hover:text-[#38BDF8] transition-colors flex items-center gap-1"
                         title="Open on Google Maps"
                       >
@@ -848,7 +848,7 @@ export default function HomePage() {
       <section className="bg-[#EAF3FD] py-10 lg:py-14 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-12 gap-6 lg:gap-8 items-center">
-            
+
             {/* Left Title Area */}
             <div className="lg:col-span-4 space-y-2.5">
               <div className="text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-[#1D64D8] flex items-center gap-2">
@@ -865,7 +865,7 @@ export default function HomePage() {
 
             {/* Right 4 Metrics */}
             <div className="lg:col-span-8 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-5 sm:gap-6 lg:gap-4 xl:gap-8 items-start">
-              
+
               {/* Metric 1 */}
               <div className="min-w-0">
                 <div className="text-2xl sm:text-3xl lg:text-3xl xl:text-[42px] font-extrabold text-[#1D64D8] tracking-tight leading-none whitespace-nowrap">
@@ -917,7 +917,7 @@ export default function HomePage() {
          ======================================================== */}
       <section className="py-12 lg:py-16 bg-white border-t border-slate-100 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 gap-4">
             <div>
               <div className="text-xs sm:text-sm font-bold tracking-[0.2em] text-[#1D64D8] uppercase mb-2 flex items-center gap-2">
@@ -941,7 +941,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-            
+
             {/* 1. Grand Entrance & Campus */}
             <div className="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-[0_4px_20px_rgba(29,100,216,0.04)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col">
               <div className="aspect-[16/11] relative overflow-hidden bg-slate-100">
@@ -1095,7 +1095,7 @@ export default function HomePage() {
          ======================================================== */}
       <section className="py-10 sm:py-12 lg:py-14 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           <div className="mb-6 sm:mb-8">
             <div className="text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-[#1D64D8] mb-2 flex items-center gap-2">
               <span>PATIENT REVIEWS</span>
@@ -1111,7 +1111,7 @@ export default function HomePage() {
           {/* Testimonial Card matching reference screenshot */}
           <div className="bg-white rounded-[28px] sm:rounded-[32px] p-6 sm:p-8 md:p-9 border border-slate-100 shadow-[0_8px_30px_rgba(29,100,216,0.06)] max-w-5xl">
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 sm:gap-8">
-              
+
               {/* Patient Avatar matching reference */}
               <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden shrink-0 border border-slate-100 shadow-sm">
                 <img
@@ -1142,7 +1142,7 @@ export default function HomePage() {
          ======================================================== */}
       <section className="py-10 sm:py-12 lg:py-14 bg-[#F5F9FD] border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
             <div className="text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-[#1D64D8] mb-2 flex items-center justify-center gap-2">
               <span>OUR MEDICAL EXPERTS</span>
@@ -1159,7 +1159,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            
+
             {/* Doctor 1: Dr. Krishan Jangra */}
             <div className="bg-white rounded-[24px] sm:rounded-[28px] p-6 sm:p-7 border border-slate-100 shadow-[0_6px_25px_rgba(29,100,216,0.04)] hover:shadow-md transition-all flex flex-col sm:flex-row gap-5 items-center sm:items-start text-center sm:text-left group">
               <div className="w-18 h-18 sm:w-20 sm:h-20 rounded-2xl overflow-hidden shrink-0 shadow-md border-2 border-sky-100 bg-slate-100">
@@ -1214,7 +1214,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative rounded-[28px] sm:rounded-[32px] overflow-hidden bg-[#0A1938] text-white shadow-xl">
             <div className="grid md:grid-cols-12 items-center">
-              
+
               {/* Left Content */}
               <div className="p-6 sm:p-8 md:p-10 lg:p-12 md:col-span-7 space-y-3.5">
                 <div className="text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-[#38BDF8] flex items-center gap-2">
@@ -1271,7 +1271,7 @@ export default function HomePage() {
       <section id="appointment-form" className="py-10 sm:py-12 lg:py-14 bg-[#F5F9FD] border-t border-slate-100">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-[28px] sm:rounded-[32px] p-6 sm:p-8 md:p-10 shadow-lg border border-slate-100">
-            
+
             <div className="text-center max-w-xl mx-auto mb-6">
               <div className="text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-[#1D64D8] mb-1.5 flex items-center justify-center gap-2">
                 <span>ONLINE BOOKING</span>
